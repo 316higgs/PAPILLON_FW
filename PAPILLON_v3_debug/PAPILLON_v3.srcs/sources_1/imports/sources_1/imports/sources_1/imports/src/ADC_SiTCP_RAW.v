@@ -72,7 +72,7 @@ module ADC_SiTCP_RAW(
 	
 	input					RING_SOD		;
 	input	[31:0]			RING_TRG_NUM	;
-    input   [12*24-1:0]    	RING_ADC    ;// 24ch [287:0] RING_ADC
+        input   [12*24-1:0]    	RING_ADC    ;// 24ch [287:0] RING_ADC
 	input					SiTCP_TX_AFULL		;
 	output					SiTCP_TX_WE			;
 	output	[7:0]			SiTCP_TX_WD			;
@@ -421,8 +421,8 @@ module ADC_SiTCP_RAW(
 		
 		rdHdVal		<= dlyHdVal;
 
-		case(dlyRdRa[5:0])   // [6:0]
-	       	6'd0: rdAdcData[7:0]	<= {4'd0,rd[12*0+11:12*0+8]};
+	case(dlyRdRa[5:0])   // [6:0]
+	    6'd0: rdAdcData[7:0]    <= {4'd0,rd[12*0+11:12*0+8]};
             6'd1: rdAdcData[7:0]    <= rd[12*0+7:12*0];
             6'd2: rdAdcData[7:0]    <= {4'd0,rd[12*1+11:12*1+8]};
             6'd3: rdAdcData[7:0]    <= rd[12*1+7:12*1];
@@ -470,29 +470,27 @@ module ADC_SiTCP_RAW(
             6'd45:rdAdcData[7:0]    <= rd[12*22+7:12*22];
             6'd46:rdAdcData[7:0]    <= {4'd0,rd[12*23+11:12*23+8]};
             6'd47:rdAdcData[7:0]    <= rd[12*23+7:12*23];
-            default:rdAdcData[7:0] 	<= 7'd0;
-			
+	    default:rdAdcData[7:0]  <= 7'd0;
         endcase
-
-		rdAdcVal	<= dlyRdVal;
+	rdAdcVal <= dlyRdVal;
+		
 	end
 
-	reg				orSitcpWe		;
-	reg		[7:0]	orSitcpWd		;
+	reg       orSitcpWe;
+	reg [7:0] orSitcpWd;
 
 	always@ (posedge SYSCLK) begin
 		if(sRST)begin
-			orSitcpWe		<= 1'b0;
+			orSitcpWe	<= 1'b0;
 			orSitcpWd[7:0]	<= 8'd0;
 		end else begin
-			orSitcpWe		<= rdHdVal | rdAdcVal;
-			orSitcpWd[7:0]	<=	(rdHdVal	? rdHdData[7:0]		: 8'd0)|
-								(rdAdcVal	? rdAdcData[7:0]	: 8'd0);
+			orSitcpWe       <= rdHdVal | rdAdcVal;
+			orSitcpWd[7:0]	<= (rdHdVal ? rdHdData[7:0] : 8'd0) | (rdAdcVal ? rdAdcData[7:0] : 8'd0);
 		end
 	end
 
-	assign	SiTCP_TX_WE			= orSitcpWe;
-	assign	SiTCP_TX_WD[7:0]	= orSitcpWd[7:0];
+	assign	SiTCP_TX_WE	 = orSitcpWe;
+	assign	SiTCP_TX_WD[7:0] = orSitcpWd[7:0];
 
 //------------------------------------------------------------------------------
 endmodule
