@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 3
 create_project -in_memory -part xc7a100tfgg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -64,6 +64,21 @@ set_property used_in_implementation false [get_files -all c:/Users/81802/Desktop
 
 read_ip -quiet C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mem_8_4K/mem_8_4K.xci
 set_property used_in_implementation false [get_files -all c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mem_8_4K/mem_8_4K_ooc.xdc]
+
+read_ip -quiet C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_1/mult_gen_1.xci
+set_property used_in_implementation false [get_files -all c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_1/mult_gen_1_ooc.xdc]
+
+read_ip -quiet C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/divider/divider.xci
+set_property used_in_implementation false [get_files -all c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/divider/divider_ooc.xdc]
+
+read_ip -quiet C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_2/mult_gen_2.xci
+set_property used_in_implementation false [get_files -all c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_2/mult_gen_2_ooc.xdc]
+
+read_ip -quiet C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/cordic_0/cordic_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/cordic_0/cordic_0_ooc.xdc]
+
+read_ip -quiet C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc]
 
 read_edif C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.ngc
 # Mark all dcp files as not used in implementation to prevent them from being

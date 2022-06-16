@@ -1,6 +1,6 @@
-xpm_cdc.sv,systemverilog,xpm,../../../../../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
-xpm_memory.sv,systemverilog,xpm,../../../../../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
-xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd,
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd,
 xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_10,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
 axi_utils_v2_0_vh_rfs.vhd,vhdl,axi_utils_v2_0_6,../../../ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd,
 xbip_pipe_v3_0_vh_rfs.vhd,vhdl,xbip_pipe_v3_0_6,../../../ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd,
@@ -12,5 +12,5 @@ floating_point_v7_0_vh_rfs.vhd,vhdl,floating_point_v7_0_17,../../../ipstatic/hdl
 xbip_dsp48_mult_v3_0_vh_rfs.vhd,vhdl,xbip_dsp48_mult_v3_0_6,../../../ipstatic/hdl/xbip_dsp48_mult_v3_0_vh_rfs.vhd,
 xbip_dsp48_multadd_v3_0_vh_rfs.vhd,vhdl,xbip_dsp48_multadd_v3_0_6,../../../ipstatic/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd,
 div_gen_v5_1_vh_rfs.vhd,vhdl,div_gen_v5_1_16,../../../ipstatic/hdl/div_gen_v5_1_vh_rfs.vhd,
-divider.vhd,vhdl,xil_defaultlib,../../../../PAPILLON_v3s.srcs/sources_1/ip/divider/sim/divider.vhd,
+divider.vhd,vhdl,xil_defaultlib,../../../../PAPILLON_vADCINT.srcs/sources_1/ip/divider/sim/divider.vhd,
 glbl.v,Verilog,xil_defaultlib,glbl.v

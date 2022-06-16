@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Nov 22 23:54:10 2021
--- Host        : larwx01 running 64-bit major release  (build 9200)
+-- Date        : Thu Jun 16 12:39:31 2022
+-- Host        : DESKTOP-NG52DIC running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/kensh/Desktop/FPGA/PAPILLON/PAPILLON_v3s/PAPILLON_v3s.srcs/sources_1/ip/mult_gen_2/mult_gen_2_stub.vhdl
+--               C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_2/mult_gen_2_stub.vhdl
 -- Design      : mult_gen_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tfgg484-1

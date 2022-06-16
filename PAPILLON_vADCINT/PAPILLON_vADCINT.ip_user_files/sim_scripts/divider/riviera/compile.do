@@ -70,7 +70,7 @@ vcom -work div_gen_v5_1_16 -93 \
 "../../../ipstatic/hdl/div_gen_v5_1_vh_rfs.vhd" \
 
 vcom -work xil_defaultlib -93 \
-"../../../../PAPILLON_v3s.srcs/sources_1/ip/divider/sim/divider.vhd" \
+"../../../../PAPILLON_vADCINT.srcs/sources_1/ip/divider/sim/divider.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

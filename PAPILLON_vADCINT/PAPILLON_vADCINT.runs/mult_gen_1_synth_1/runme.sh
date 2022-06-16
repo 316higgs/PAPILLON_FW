@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/kensh/Desktop/FPGA/PAPILLON/PAPILLON_v3s/PAPILLON_v3s.runs/mult_gen_1_synth_1'
+HD_PWD='C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.runs/mult_gen_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

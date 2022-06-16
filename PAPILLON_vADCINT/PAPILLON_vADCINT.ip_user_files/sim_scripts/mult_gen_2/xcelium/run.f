@@ -18,7 +18,7 @@
   "../../../ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../PAPILLON_v3s.srcs/sources_1/ip/mult_gen_2/sim/mult_gen_2.vhd" \
+  "../../../../PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_2/sim/mult_gen_2.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

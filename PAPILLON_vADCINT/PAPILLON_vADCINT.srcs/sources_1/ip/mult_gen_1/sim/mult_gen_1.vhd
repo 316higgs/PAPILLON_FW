@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -122,14 +122,14 @@ BEGIN
       C_XDEVICEFAMILY => "artix7",
       C_HAS_CE => 1,
       C_HAS_SCLR => 0,
-      C_LATENCY => 1,
+      C_LATENCY => 6,
       C_A_WIDTH => 64,
       C_A_TYPE => 0,
       C_B_WIDTH => 16,
       C_B_TYPE => 0,
       C_OUT_HIGH => 79,
       C_OUT_LOW => 0,
-      C_MULT_TYPE => 0,
+      C_MULT_TYPE => 1,
       C_CE_OVERRIDES_SCLR => 0,
       C_CCM_IMP => 0,
       C_B_VALUE => "10000001",

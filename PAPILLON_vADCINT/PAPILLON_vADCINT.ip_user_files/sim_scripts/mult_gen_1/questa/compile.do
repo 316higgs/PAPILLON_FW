@@ -35,7 +35,7 @@ vcom -work mult_gen_v12_0_16 -64 -93 \
 "../../../ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../../PAPILLON_v3s.srcs/sources_1/ip/mult_gen_1/sim/mult_gen_1.vhd" \
+"../../../../PAPILLON_vADCINT.srcs/sources_1/ip/mult_gen_1/sim/mult_gen_1.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

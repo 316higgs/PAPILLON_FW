@@ -271,7 +271,7 @@ module ADC_SiTCP_RAW_TB;
     for(i=0; i<640;i=i+1)begin            //loop 640 samples
       RING_ADC[11:0]    <= data0000[i];   //12 bit for ch0
       RING_ADC[23:12]   <= data0001[i];   //12 bit for ch1
-      RING_ADC[23:12]   <= data0001[i];   //12 bit for ch2
+      //RING_ADC[23:12]   <= data0001[i];   //12 bit for ch2
       RING_ADC[35:24]	<= data0002[i];   //12 bit for ch3
       RING_ADC[47:36]   <= data0003[i];
       RING_ADC[59:48]	<= data0004[i];

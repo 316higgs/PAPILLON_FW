@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Jun 14 17:35:31 2022
+| Date         : Thu Jun 16 19:43:26 2022
 | Host         : DESKTOP-NG52DIC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ADC_SiTCP_V20_utilization_synth.rpt -pb ADC_SiTCP_V20_utilization_synth.pb
 | Design       : ADC_SiTCP_V20
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 4525 |     0 |     63400 |  7.14 |
-|   LUT as Logic             | 4407 |     0 |     63400 |  6.95 |
+| Slice LUTs*                | 7334 |     0 |     63400 | 11.57 |
+|   LUT as Logic             | 7216 |     0 |     63400 | 11.38 |
 |   LUT as Memory            |  118 |     0 |     19000 |  0.62 |
 |     LUT as Distributed RAM |    8 |     0 |           |       |
 |     LUT as Shift Register  |  110 |     0 |           |       |
-| Slice Registers            | 6796 |     0 |    126800 |  5.36 |
-|   Register as Flip Flop    | 6796 |     0 |    126800 |  5.36 |
+| Slice Registers            | 9596 |     0 |    126800 |  7.57 |
+|   Register as Flip Flop    | 9596 |     0 |    126800 |  7.57 |
 |   Register as Latch        |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                   |  215 |     0 |     31700 |  0.68 |
-| F8 Muxes                   |   92 |     0 |     15850 |  0.58 |
+| F7 Muxes                   |  416 |     0 |     31700 |  1.31 |
+| F8 Muxes                   |  112 |     0 |     15850 |  0.71 |
 +----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 117   |          Yes |           - |          Set |
 | 1699  |          Yes |           - |        Reset |
-| 82    |          Yes |         Set |            - |
-| 4898  |          Yes |       Reset |            - |
+| 86    |          Yes |         Set |            - |
+| 7694  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -157,20 +157,20 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       | 4898 |        Flop & Latch |
+| FDRE       | 7694 |        Flop & Latch |
+| LUT2       | 2661 |                 LUT |
+| LUT6       | 1745 |                 LUT |
 | FDCE       | 1699 |        Flop & Latch |
-| LUT6       | 1148 |                 LUT |
-| LUT3       | 1115 |                 LUT |
-| LUT2       |  845 |                 LUT |
-| LUT1       |  645 |                 LUT |
-| LUT4       |  455 |                 LUT |
-| LUT5       |  354 |                 LUT |
-| CARRY4     |  326 |          CarryLogic |
-| MUXF7      |  215 |               MuxFx |
+| LUT3       | 1183 |                 LUT |
+| CARRY4     |  806 |          CarryLogic |
+| LUT1       |  776 |                 LUT |
+| LUT4       |  606 |                 LUT |
+| LUT5       |  524 |                 LUT |
+| MUXF7      |  416 |               MuxFx |
 | FDPE       |  117 |        Flop & Latch |
+| MUXF8      |  112 |               MuxFx |
 | SRLC16E    |  103 |  Distributed Memory |
-| MUXF8      |   92 |               MuxFx |
-| FDSE       |   82 |        Flop & Latch |
+| FDSE       |   86 |        Flop & Latch |
 | OBUF       |   72 |                  IO |
 | IBUFDS     |   30 |                  IO |
 | ISERDESE2  |   27 |                  IO |
@@ -199,6 +199,11 @@ Table of Contents
 +------------------+------+
 | mem_8_4K         |   72 |
 | fifo_generator_1 |    3 |
+| divider          |    2 |
+| mult_gen_2       |    1 |
+| mult_gen_1       |    1 |
+| mult_gen_0       |    1 |
+| cordic_0         |    1 |
 | SYSCLK2          |    1 |
 | SYSCLK0          |    1 |
 +------------------+------+
