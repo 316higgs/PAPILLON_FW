@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jul 15 14:17:02 2022
+# Process ID: 4324
+# Current directory: C:/Users/Tohoku/Desktop/PAPILLON_FW/PAPILLON_vADCINT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8384 C:\Users\Tohoku\Desktop\PAPILLON_FW\PAPILLON_vADCINT\PAPILLON_vADCINT.xpr
+# Log file: C:/Users/Tohoku/Desktop/PAPILLON_FW/PAPILLON_vADCINT/vivado.log
+# Journal file: C:/Users/Tohoku/Desktop/PAPILLON_FW/PAPILLON_vADCINT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tohoku/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/Tohoku/Desktop/PAPILLON_FW/PAPILLON_vADCINT/PAPILLON_vADCINT.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
+source ADC_INT_TB.tcl
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
