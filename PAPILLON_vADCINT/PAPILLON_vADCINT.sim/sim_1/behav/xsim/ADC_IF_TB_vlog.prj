@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../PAPILLON_v3s.srcs/sources_1/ip/SYSCLK0" --include "../../../../PAPILLON_v3s.srcs/sources_1/ip/SYSCLK2" \
+"../../../../PAPILLON_v3s.srcs/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v" \
+"../../../../PAPILLON_v3s.srcs/sources_1/imports/new/ADC_IF.v" \
+"../../../../PAPILLON_v3s.srcs/sources_1/imports/sources_1/new/SIF_IF2_TEST.v" \
+"../../../../PAPILLON_v3s.srcs/sources_1/imports/sources_1/new/SIF_IF2_selectio_wiz_TEST.v" \
+"../../../../PAPILLON_v3s.srcs/sim_1/imports/new/ADC_IF_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
