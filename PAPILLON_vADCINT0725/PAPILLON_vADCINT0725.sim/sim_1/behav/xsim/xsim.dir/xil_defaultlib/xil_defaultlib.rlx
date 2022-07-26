@@ -1,0 +1,12 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.sim/sim_1/behav/xsim/glbl.v,1645411350,verilog,,,,glbl,,,,,,,,
+C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sim_1/new/ADC_INT_TB.v,1658806495,verilog,,,,ADC_INT_TB,,,../../../../PAPILLON_vADCINT0725.srcs/sources_1/ip/SYSCLK0;../../../../PAPILLON_vADCINT0725.srcs/sources_1/ip/SYSCLK2,,,,,
+C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v,1658807523,verilog,,C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sim_1/new/ADC_INT_TB.v,,ADC_INT,,,../../../../PAPILLON_vADCINT0725.srcs/sources_1/ip/SYSCLK0;../../../../PAPILLON_vADCINT0725.srcs/sources_1/ip/SYSCLK2,,,,,
+C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sources_1/ip/cordic_0/sim/cordic_0.vhd,1645411350,vhdl,,,,cordic_0,,,,,,,,
+C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sources_1/ip/divider/sim/divider.vhd,1655197892,vhdl,,,,divider,,,,,,,,
+C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1655374168,vhdl,,,,mult_gen_0,,,,,,,,
+C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sources_1/ip/mult_gen_1/sim/mult_gen_1.vhd,1655373514,vhdl,,,,mult_gen_1,,,,,,,,
+C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sources_1/ip/mult_gen_2/sim/mult_gen_2.vhd,1655454902,vhdl,,,,mult_gen_2,,,,,,,,
