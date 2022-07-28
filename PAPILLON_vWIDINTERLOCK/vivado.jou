@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jul 27 10:04:09 2022
+# Process ID: 10664
+# Current directory: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10404 C:\Users\81802\Desktop\PAPILLON_FW\PAPILLON_vWIDINTERLOCK\PAPILLON_vWIDINTERLOCK.xpr
+# Log file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK/vivado.log
+# Journal file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK/PAPILLON_vWIDINTERLOCK.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+launch_simulation
+open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
+source ADC_INT_TB.tcl
+run all
+close_sim
+close_project
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK/PAPILLON_vWIDINTERLOCK.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vADCINT0725/PAPILLON_vADCINT0725.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+close_project
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK/PAPILLON_vWIDINTERLOCK.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK/PAPILLON_vWIDINTERLOCK.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
+source ADC_INT_TB.tcl
+run all
+relaunch_sim
+run all
+save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK/PAPILLON_vWIDINTERLOCK.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_vWIDINTERLOCK/PAPILLON_vWIDINTERLOCK.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
+source ADC_INT_TB.tcl
+run all
+close_sim
