@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ADC_INT_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ADC_INT_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="885469fs"></ZoomStartTime>
+      <ZoomEndTime time="1069348fs"></ZoomEndTime>
+      <Cursor1Time time="25103125fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="479"></NameColumnWidth>
+      <ValueColumnWidth column_width="119"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="group607" type="group">
+      <obj_property name="label">ADC_SiTCP_RAW</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/SYSCLK" type="logic">
+      <obj_property name="ElementShortName">SYSCLK</obj_property>
+      <obj_property name="ObjectShortName">SYSCLK</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/ENABLE" type="logic">
+      <obj_property name="ElementShortName">ENABLE</obj_property>
+      <obj_property name="ObjectShortName">ENABLE</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/sRST" type="logic">
+      <obj_property name="ElementShortName">sRST</obj_property>
+      <obj_property name="ObjectShortName">sRST</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/WRITE_ENABLE" type="logic">
+      <obj_property name="ElementShortName">WRITE_ENABLE</obj_property>
+      <obj_property name="ObjectShortName">WRITE_ENABLE</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/intwe" type="logic">
+      <obj_property name="ElementShortName">intwe</obj_property>
+      <obj_property name="ObjectShortName">intwe</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/initADC_INT" type="logic">
+      <obj_property name="ElementShortName">initADC_INT</obj_property>
+      <obj_property name="ObjectShortName">initADC_INT</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/FillPed" type="logic">
+      <obj_property name="ElementShortName">FillPed</obj_property>
+      <obj_property name="ObjectShortName">FillPed</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/CountClkPed" type="array">
+      <obj_property name="ElementShortName">CountClkPed[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CountClkPed[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/CountCalPed" type="array">
+      <obj_property name="ElementShortName">CountCalPed[16:0]</obj_property>
+      <obj_property name="ObjectShortName">CountCalPed[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/RawWD00" type="array">
+      <obj_property name="ElementShortName">RawWD00[12:0]</obj_property>
+      <obj_property name="ObjectShortName">RawWD00[12:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/SumRawWD00" type="array">
+      <obj_property name="ElementShortName">SumRawWD00[47:0]</obj_property>
+      <obj_property name="ObjectShortName">SumRawWD00[47:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/FinPedCal" type="logic">
+      <obj_property name="ElementShortName">FinPedCal</obj_property>
+      <obj_property name="ObjectShortName">FinPedCal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/pedestal00" type="array">
+      <obj_property name="ElementShortName">pedestal00[12:0]</obj_property>
+      <obj_property name="ObjectShortName">pedestal00[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/DecidedPed" type="logic">
+      <obj_property name="ElementShortName">DecidedPed</obj_property>
+      <obj_property name="ObjectShortName">DecidedPed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/DelayedRawWD00" type="array">
+      <obj_property name="ElementShortName">DelayedRawWD00[12:0]</obj_property>
+      <obj_property name="ObjectShortName">DelayedRawWD00[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group767" type="group">
+      <obj_property name="label">Read wave form</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/CountClk" type="array">
+         <obj_property name="ElementShortName">CountClk[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CountClk[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/CountCal" type="array">
+         <obj_property name="ElementShortName">CountCal[16:0]</obj_property>
+         <obj_property name="ObjectShortName">CountCal[16:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/WD00" type="array">
+         <obj_property name="ElementShortName">WD00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">WD00[12:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ00" type="array">
+         <obj_property name="ElementShortName">sumQ00[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ00[47:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group86" type="group">
+      <obj_property name="label">Get Qstrip and xstrip</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">Get x*Q and Sigma Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group97" type="group">
+      <obj_property name="label">Get x*x*Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group99" type="group">
+      <obj_property name="label">Get Sigma x*x*Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group148" type="group">
+      <obj_property name="label">Get Sigma x*x*Q/Sigma Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group84" type="group">
+      <obj_property name="label">Beam position calculation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/BeamPosQ" type="array">
+         <obj_property name="ElementShortName">BeamPosQ[63:0]</obj_property>
+         <obj_property name="ObjectShortName">BeamPosQ[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/BeamPosR" type="array">
+         <obj_property name="ElementShortName">BeamPosR[63:0]</obj_property>
+         <obj_property name="ObjectShortName">BeamPosR[63:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group88" type="group">
+      <obj_property name="label">Get X*X</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group149" type="group">
+      <obj_property name="label">Get squared beam width</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group152" type="group">
+      <obj_property name="label">Beam width calculation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group87" type="group">
+      <obj_property name="label">Interlock</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group157" type="group">
+         <obj_property name="label">Get calculated results</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="group156" type="group">
+         <obj_property name="label">Compare result and threshold</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="group227" type="group">
+            <obj_property name="label">Beam position check</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="group228" type="group">
+            <obj_property name="label">Beam width check</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group111" type="group">
+      <obj_property name="label">Close ADC_INT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+</wave_config>
