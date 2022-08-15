@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ADC_INT_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ADC_INT_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4370625fs"></ZoomStartTime>
+      <ZoomEndTime time="19700626fs"></ZoomEndTime>
+      <Cursor1Time time="9670625fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="458"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/ADC_INT_TB/SYSCLK" type="logic">
+      <obj_property name="ElementShortName">SYSCLK</obj_property>
+      <obj_property name="ObjectShortName">SYSCLK</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/ENABLE" type="logic">
+      <obj_property name="ElementShortName">ENABLE</obj_property>
+      <obj_property name="ObjectShortName">ENABLE</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/sRST" type="logic">
+      <obj_property name="ElementShortName">sRST</obj_property>
+      <obj_property name="ObjectShortName">sRST</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/WRITE_ENABLE" type="logic">
+      <obj_property name="ElementShortName">WRITE_ENABLE</obj_property>
+      <obj_property name="ObjectShortName">WRITE_ENABLE</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group230" type="group">
+      <obj_property name="label">Initialization and start reading</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/initADC_INT" type="logic">
+         <obj_property name="ElementShortName">initADC_INT</obj_property>
+         <obj_property name="ObjectShortName">initADC_INT</obj_property>
+         <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/intwe" type="logic">
+         <obj_property name="ElementShortName">intwe</obj_property>
+         <obj_property name="ObjectShortName">intwe</obj_property>
+         <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group39" type="group">
+      <obj_property name="label">Pedestal Calculation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/CountClkPed" type="array">
+         <obj_property name="ElementShortName">CountClkPed[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CountClkPed[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/CountCalPed" type="array">
+         <obj_property name="ElementShortName">CountCalPed[16:0]</obj_property>
+         <obj_property name="ObjectShortName">CountCalPed[16:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/RawWD00" type="array">
+         <obj_property name="ElementShortName">RawWD00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">RawWD00[12:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumRawWD00" type="array">
+         <obj_property name="ElementShortName">SumRawWD00[47:0]</obj_property>
+         <obj_property name="ObjectShortName">SumRawWD00[47:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/FinPedCal" type="logic">
+         <obj_property name="ElementShortName">FinPedCal</obj_property>
+         <obj_property name="ObjectShortName">FinPedCal</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/pedestal00" type="array">
+         <obj_property name="ElementShortName">pedestal00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">pedestal00[12:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/DecidedPed" type="logic">
+         <obj_property name="ElementShortName">DecidedPed</obj_property>
+         <obj_property name="ObjectShortName">DecidedPed</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/DelayedRawWD00" type="array">
+         <obj_property name="ElementShortName">DelayedRawWD00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">DelayedRawWD00[12:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/StartCal" type="logic">
+      <obj_property name="ElementShortName">StartCal</obj_property>
+      <obj_property name="ObjectShortName">StartCal</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group767" type="group">
+      <obj_property name="label">Accumulate signal quantities</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/IntQNow" type="logic">
+         <obj_property name="ElementShortName">IntQNow</obj_property>
+         <obj_property name="ObjectShortName">IntQNow</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/CountClk" type="array">
+         <obj_property name="ElementShortName">CountClk[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CountClk[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/CountCal" type="array">
+         <obj_property name="ElementShortName">CountCal[16:0]</obj_property>
+         <obj_property name="ObjectShortName">CountCal[16:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/WD00" type="array">
+         <obj_property name="ElementShortName">WD00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">WD00[12:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ00" type="array">
+         <obj_property name="ElementShortName">sumQ00[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ00[47:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ09" type="array">
+         <obj_property name="ElementShortName">sumQ09[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ09[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ10" type="array">
+         <obj_property name="ElementShortName">sumQ10[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ10[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ11" type="array">
+         <obj_property name="ElementShortName">sumQ11[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ11[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ12" type="array">
+         <obj_property name="ElementShortName">sumQ12[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ12[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ13" type="array">
+         <obj_property name="ElementShortName">sumQ13[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ13[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ14" type="array">
+         <obj_property name="ElementShortName">sumQ14[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ14[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ15" type="array">
+         <obj_property name="ElementShortName">sumQ15[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ15[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ16" type="array">
+         <obj_property name="ElementShortName">sumQ16[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ16[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ17" type="array">
+         <obj_property name="ElementShortName">sumQ17[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ17[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ18" type="array">
+         <obj_property name="ElementShortName">sumQ18[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ18[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ19" type="array">
+         <obj_property name="ElementShortName">sumQ19[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ19[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ20" type="array">
+         <obj_property name="ElementShortName">sumQ20[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ20[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ21" type="array">
+         <obj_property name="ElementShortName">sumQ21[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ21[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ22" type="array">
+         <obj_property name="ElementShortName">sumQ22[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ22[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/sumQ23" type="array">
+         <obj_property name="ElementShortName">sumQ23[47:0]</obj_property>
+         <obj_property name="ObjectShortName">sumQ23[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group86" type="group">
+      <obj_property name="label">Get Qstrip and xstrip</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/QstripNow" type="logic">
+         <obj_property name="ElementShortName">QstripNow</obj_property>
+         <obj_property name="ObjectShortName">QstripNow</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/LongQstripNow" type="logic">
+         <obj_property name="ElementShortName">LongQstripNow</obj_property>
+         <obj_property name="ObjectShortName">LongQstripNow</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/ChCounter" type="array">
+         <obj_property name="ElementShortName">ChCounter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ChCounter[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/UseThisQstrip" type="logic">
+         <obj_property name="ElementShortName">UseThisQstrip</obj_property>
+         <obj_property name="ObjectShortName">UseThisQstrip</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/Qstrip" type="array">
+         <obj_property name="ElementShortName">Qstrip[47:0]</obj_property>
+         <obj_property name="ObjectShortName">Qstrip[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/xstrip" type="array">
+         <obj_property name="ElementShortName">xstrip[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xstrip[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">Get Sigma Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumStandby" type="logic">
+         <obj_property name="ElementShortName">SumStandby</obj_property>
+         <obj_property name="ObjectShortName">SumStandby</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/StartSum" type="logic">
+         <obj_property name="ElementShortName">StartSum</obj_property>
+         <obj_property name="ObjectShortName">StartSum</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumQstrip" type="array">
+         <obj_property name="ElementShortName">SumQstrip[63:0]</obj_property>
+         <obj_property name="ObjectShortName">SumQstrip[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group64" type="group">
+      <obj_property name="label">Get Sigma x*Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumQstrip_1st" type="array">
+         <obj_property name="ElementShortName">SumQstrip_1st[63:0]</obj_property>
+         <obj_property name="ObjectShortName">SumQstrip_1st[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumQstrip_2nd" type="array">
+         <obj_property name="ElementShortName">SumQstrip_2nd[63:0]</obj_property>
+         <obj_property name="ObjectShortName">SumQstrip_2nd[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumQstrip_3rd" type="array">
+         <obj_property name="ElementShortName">SumQstrip_3rd[63:0]</obj_property>
+         <obj_property name="ObjectShortName">SumQstrip_3rd[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumQstrip_4th" type="array">
+         <obj_property name="ElementShortName">SumQstrip_4th[63:0]</obj_property>
+         <obj_property name="ObjectShortName">SumQstrip_4th[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/Qstrip_x_xstrip" type="array">
+         <obj_property name="ElementShortName">Qstrip_x_xstrip[63:0]</obj_property>
+         <obj_property name="ObjectShortName">Qstrip_x_xstrip[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/WeightSumStandby" type="logic">
+         <obj_property name="ElementShortName">WeightSumStandby</obj_property>
+         <obj_property name="ObjectShortName">WeightSumStandby</obj_property>
+         <obj_property name="CustomSignalColor">#800000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/StartWeightSum" type="logic">
+         <obj_property name="ElementShortName">StartWeightSum</obj_property>
+         <obj_property name="ObjectShortName">StartWeightSum</obj_property>
+         <obj_property name="CustomSignalColor">#800000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumQstrip_x_xstrip" type="array">
+         <obj_property name="ElementShortName">SumQstrip_x_xstrip[63:0]</obj_property>
+         <obj_property name="ObjectShortName">SumQstrip_x_xstrip[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group97" type="group">
+      <obj_property name="label">Get x*x*Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/xstripcopy" type="array">
+         <obj_property name="ElementShortName">xstripcopy[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xstripcopy[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/xstripcopy_1st" type="array">
+         <obj_property name="ElementShortName">xstripcopy_1st[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xstripcopy_1st[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/xstripcopy_2nd" type="array">
+         <obj_property name="ElementShortName">xstripcopy_2nd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xstripcopy_2nd[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/xstripcopy_3rd" type="array">
+         <obj_property name="ElementShortName">xstripcopy_3rd[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xstripcopy_3rd[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/xstripcopy_4th" type="array">
+         <obj_property name="ElementShortName">xstripcopy_4th[15:0]</obj_property>
+         <obj_property name="ObjectShortName">xstripcopy_4th[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/Delayed_Qstrip_x_xstrip" type="array">
+         <obj_property name="ElementShortName">Delayed_Qstrip_x_xstrip[63:0]</obj_property>
+         <obj_property name="ObjectShortName">Delayed_Qstrip_x_xstrip[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/Delayed_xstrip" type="array">
+         <obj_property name="ElementShortName">Delayed_xstrip[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Delayed_xstrip[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/DelayedStandby" type="logic">
+         <obj_property name="ElementShortName">DelayedStandby</obj_property>
+         <obj_property name="ObjectShortName">DelayedStandby</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/StartDelay" type="logic">
+         <obj_property name="ElementShortName">StartDelay</obj_property>
+         <obj_property name="ObjectShortName">StartDelay</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/xstrip2_x_Qstrip" type="array">
+         <obj_property name="ElementShortName">xstrip2_x_Qstrip[79:0]</obj_property>
+         <obj_property name="ObjectShortName">xstrip2_x_Qstrip[79:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group99" type="group">
+      <obj_property name="label">Get Sigma x*x*Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/SquareWeightStandby" type="logic">
+         <obj_property name="ElementShortName">SquareWeightStandby</obj_property>
+         <obj_property name="ObjectShortName">SquareWeightStandby</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/StartSquareWeight" type="logic">
+         <obj_property name="ElementShortName">StartSquareWeight</obj_property>
+         <obj_property name="ObjectShortName">StartSquareWeight</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/Sumxstrip2_x_Qstrip" type="array">
+         <obj_property name="ElementShortName">Sumxstrip2_x_Qstrip[79:0]</obj_property>
+         <obj_property name="ObjectShortName">Sumxstrip2_x_Qstrip[79:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group148" type="group">
+      <obj_property name="label">Get Sigma x*x*Q/Sigma Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/erms" type="logic">
+         <obj_property name="ElementShortName">erms</obj_property>
+         <obj_property name="ObjectShortName">erms</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/StartDivider2" type="logic">
+         <obj_property name="ElementShortName">StartDivider2</obj_property>
+         <obj_property name="ObjectShortName">StartDivider2</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/PartBeamWidQ" type="array">
+         <obj_property name="ElementShortName">PartBeamWidQ[63:0]</obj_property>
+         <obj_property name="ObjectShortName">PartBeamWidQ[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/PartBeamWidR" type="array">
+         <obj_property name="ElementShortName">PartBeamWidR[63:0]</obj_property>
+         <obj_property name="ObjectShortName">PartBeamWidR[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/EndDivider2" type="logic">
+         <obj_property name="ElementShortName">EndDivider2</obj_property>
+         <obj_property name="ObjectShortName">EndDivider2</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group84" type="group">
+      <obj_property name="label">Calculate beam position X</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/eavr" type="logic">
+         <obj_property name="ElementShortName">eavr</obj_property>
+         <obj_property name="ObjectShortName">eavr</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/StartDivider" type="logic">
+         <obj_property name="ElementShortName">StartDivider</obj_property>
+         <obj_property name="ObjectShortName">StartDivider</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/BeamPosQ" type="array">
+         <obj_property name="ElementShortName">BeamPosQ[63:0]</obj_property>
+         <obj_property name="ObjectShortName">BeamPosQ[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/BeamPosR" type="array">
+         <obj_property name="ElementShortName">BeamPosR[63:0]</obj_property>
+         <obj_property name="ObjectShortName">BeamPosR[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/EndDivider" type="logic">
+         <obj_property name="ElementShortName">EndDivider</obj_property>
+         <obj_property name="ObjectShortName">EndDivider</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group88" type="group">
+      <obj_property name="label">Get X*X</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/DelayPosStandby" type="logic">
+         <obj_property name="ElementShortName">DelayPosStandby</obj_property>
+         <obj_property name="ObjectShortName">DelayPosStandby</obj_property>
+         <obj_property name="CustomSignalColor">#D2691E</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/StartDelayPos" type="logic">
+         <obj_property name="ElementShortName">StartDelayPos</obj_property>
+         <obj_property name="ObjectShortName">StartDelayPos</obj_property>
+         <obj_property name="CustomSignalColor">#D2691E</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/Delayed_BeamPos" type="array">
+         <obj_property name="ElementShortName">Delayed_BeamPos[63:0]</obj_property>
+         <obj_property name="ObjectShortName">Delayed_BeamPos[63:0]</obj_property>
+         <obj_property name="CustomSignalColor">#D2691E</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/BeamPosSquare" type="array">
+         <obj_property name="ElementShortName">BeamPosSquare[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BeamPosSquare[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#D2691E</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group149" type="group">
+      <obj_property name="label">Get squared beam width</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/BeamWidSquare" type="array">
+         <obj_property name="ElementShortName">BeamWidSquare[47:0]</obj_property>
+         <obj_property name="ObjectShortName">BeamWidSquare[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/BeamWidSquare[47]" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[47]</obj_property>
+         <obj_property name="ObjectShortName">[47]</obj_property>
+         <obj_property name="label">BeamWidSquare[47]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/UnsignedBeamWidSquare" type="array">
+         <obj_property name="ElementShortName">UnsignedBeamWidSquare[47:0]</obj_property>
+         <obj_property name="ObjectShortName">UnsignedBeamWidSquare[47:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group152" type="group">
+      <obj_property name="label">Calculate beam width sigmaX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/StartSQRT" type="logic">
+         <obj_property name="ElementShortName">StartSQRT</obj_property>
+         <obj_property name="ObjectShortName">StartSQRT</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/BeamWid" type="array">
+         <obj_property name="ElementShortName">BeamWid[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BeamWid[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/EndSQRT" type="logic">
+         <obj_property name="ElementShortName">EndSQRT</obj_property>
+         <obj_property name="ObjectShortName">EndSQRT</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/EndCal" type="logic">
+      <obj_property name="ElementShortName">EndCal</obj_property>
+      <obj_property name="ObjectShortName">EndCal</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group87" type="group">
+      <obj_property name="label">Interlock</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/CompareNow" type="logic">
+         <obj_property name="ElementShortName">CompareNow</obj_property>
+         <obj_property name="ObjectShortName">CompareNow</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/Offset" type="array">
+         <obj_property name="ElementShortName">Offset[15:0]</obj_property>
+         <obj_property name="ObjectShortName">Offset[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/status_BeamPos" type="array">
+         <obj_property name="ElementShortName">status_BeamPos[15:0]</obj_property>
+         <obj_property name="ObjectShortName">status_BeamPos[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/status_BeamWid" type="array">
+         <obj_property name="ElementShortName">status_BeamWid[23:0]</obj_property>
+         <obj_property name="ObjectShortName">status_BeamWid[23:0]</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group157" type="group">
+         <obj_property name="label">Get calculated results</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="group156" type="group">
+         <obj_property name="label">Compare result and threshold</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/ADC_INT_TB/uut/StartInterlock" type="logic">
+            <obj_property name="ElementShortName">StartInterlock</obj_property>
+            <obj_property name="ObjectShortName">StartInterlock</obj_property>
+            <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="group227" type="group">
+            <obj_property name="label">Beam position check</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/ADC_INT_TB/uut/UpperThreshold" type="array">
+               <obj_property name="ElementShortName">UpperThreshold[15:0]</obj_property>
+               <obj_property name="ObjectShortName">UpperThreshold[15:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/UpperDiffBeamPos" type="array">
+               <obj_property name="ElementShortName">UpperDiffBeamPos[15:0]</obj_property>
+               <obj_property name="ObjectShortName">UpperDiffBeamPos[15:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/UpperDiffBeamPos[15]" type="logic">
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">[15]</obj_property>
+               <obj_property name="label">UpperDiffBeamPos[15]</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/LowerThreshold" type="array">
+               <obj_property name="ElementShortName">LowerThreshold[15:0]</obj_property>
+               <obj_property name="ObjectShortName">LowerThreshold[15:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/LowerDiffBeamPos" type="array">
+               <obj_property name="ElementShortName">LowerDiffBeamPos[15:0]</obj_property>
+               <obj_property name="ObjectShortName">LowerDiffBeamPos[15:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/LowerDiffBeamPos[15]" type="logic">
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">[15]</obj_property>
+               <obj_property name="label">LowerDiffBeamPos[15]</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/PosInterlock" type="logic">
+               <obj_property name="ElementShortName">PosInterlock</obj_property>
+               <obj_property name="ObjectShortName">PosInterlock</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group228" type="group">
+            <obj_property name="label">Beam width check</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/ADC_INT_TB/uut/WidthThreshold" type="array">
+               <obj_property name="ElementShortName">WidthThreshold[23:0]</obj_property>
+               <obj_property name="ObjectShortName">WidthThreshold[23:0]</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/DiffBeamWid" type="array">
+               <obj_property name="ElementShortName">DiffBeamWid[23:0]</obj_property>
+               <obj_property name="ObjectShortName">DiffBeamWid[23:0]</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/DiffBeamWid[23]" type="logic">
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="ElementShortName">[23]</obj_property>
+               <obj_property name="ObjectShortName">[23]</obj_property>
+               <obj_property name="label">DiffBeanWid[23]</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_INT_TB/uut/WidInterlock" type="logic">
+               <obj_property name="ElementShortName">WidInterlock</obj_property>
+               <obj_property name="ObjectShortName">WidInterlock</obj_property>
+               <obj_property name="CustomSignalColor">#808000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/ADC_INT_TB/uut/beamintensity" type="logic">
+            <obj_property name="ElementShortName">beamintensity</obj_property>
+            <obj_property name="ObjectShortName">beamintensity</obj_property>
+            <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_INT_TB/uut/RegInterlock" type="logic">
+            <obj_property name="ElementShortName">RegInterlock</obj_property>
+            <obj_property name="ObjectShortName">RegInterlock</obj_property>
+            <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_INT_TB/uut/status_Interlock" type="logic">
+            <obj_property name="ElementShortName">status_Interlock</obj_property>
+            <obj_property name="ObjectShortName">status_Interlock</obj_property>
+            <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_INT_TB/uut/INT_INTERLOCK" type="logic">
+            <obj_property name="ElementShortName">INT_INTERLOCK</obj_property>
+            <obj_property name="ObjectShortName">INT_INTERLOCK</obj_property>
+            <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_INT_TB/uut/BEAM_POSITION" type="array">
+            <obj_property name="ElementShortName">BEAM_POSITION[15:0]</obj_property>
+            <obj_property name="ObjectShortName">BEAM_POSITION[15:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_INT_TB/uut/BEAM_WIDTH" type="array">
+            <obj_property name="ElementShortName">BEAM_WIDTH[23:0]</obj_property>
+            <obj_property name="ObjectShortName">BEAM_WIDTH[23:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group111" type="group">
+      <obj_property name="label">Close ADC_INT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/ec_sync" type="logic">
+         <obj_property name="ElementShortName">ec_sync</obj_property>
+         <obj_property name="ObjectShortName">ec_sync</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/INT_END" type="logic">
+         <obj_property name="ElementShortName">INT_END</obj_property>
+         <obj_property name="ObjectShortName">INT_END</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/INT_TAG" type="logic">
+         <obj_property name="ElementShortName">INT_TAG</obj_property>
+         <obj_property name="ObjectShortName">INT_TAG</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
