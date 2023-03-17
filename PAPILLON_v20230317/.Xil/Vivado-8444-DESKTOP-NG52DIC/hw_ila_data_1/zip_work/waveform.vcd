@@ -1,0 +1,34 @@
+$date
+        2023-Mar-17 13:53:09
+$end
+$version
+        Vivado v2019.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " X_LED_OBUF $end
+$var reg 2 # LOC_REG/REG_MODE [1:0] $end
+$var reg 24 % LOC_REG/REG_THRESHOLD_WIDTH [23:0] $end
+$var reg 16 = LOC_REG/REG_THRESHOLD [15:0] $end
+$var reg 1 M INTERLOCK_OBUF $end
+$var reg 1 N _TRIGGER $end
+$var reg 1 O _WINDOW $end
+$var reg 1 P _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+b0 #
+b100101100 %
+b10010110 =
+0M
+0N
+1O
+0P
+$end
+#512
+b1 #
+1N
