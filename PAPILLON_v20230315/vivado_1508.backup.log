@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Mar 15 19:27:17 2023
+# Process ID: 1508
+# Current directory: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9772 C:\Users\81802\Desktop\PAPILLON_FW\PAPILLON_v20230315\PAPILLON_v20230315.xpr
+# Log file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/vivado.log
+# Journal file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 954.156 ; gain = 256.512
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-14:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1449.688 ; gain = 20.641
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq16'u0 [get_hw_probes LOC_REG/REG_NOMINAL_WIDTH -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq16'u0 [get_hw_probes LOC_REG/REG_NOMINAL_WIDTH -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Mar-15 19:31:54
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2023-Mar-15 19:32:04
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property PROBES.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2708.711 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Mar-15 19:32:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Mar-15 19:33:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230315/PAPILLON_v20230315.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 15 19:39:13 2023...
