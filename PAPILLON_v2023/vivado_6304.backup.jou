@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Apr 12 09:40:56 2023
+# Process ID: 6304
+# Current directory: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2288 C:\Users\81802\Desktop\PAPILLON_FW\PAPILLON_v2023\PAPILLON_v2023.xpr
+# Log file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/vivado.log
+# Journal file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ADC_SiTCP_RAW_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
+source ADC_SiTCP_RAW_TB.tcl
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
+close_sim
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+open_run impl_1
+close_design
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+open_run impl_1
+report_drc -name drc_1 -ruledecks {default}
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1

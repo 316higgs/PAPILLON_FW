@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1681382292">
+  <File Type="PA-TCL" Name="ADC_SiTCP_V20.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ADC_SiTCP_V20_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="ADC_SiTCP_V20_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ADC_SiTCP_V20.vds"/>
+  <File Type="RDS-UTIL" Name="ADC_SiTCP_V20_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ADC_SiTCP_V20_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ADC_SiTCP_V20.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ADC_SiTCP_V20_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ADC_SiTCP_V20_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.ngc"/>
+        <Attr Name="ImportTime" Val="1473702950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ADC_IF.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/new/ADC_IF.v"/>
+        <Attr Name="ImportTime" Val="1510421236"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/sources_1/new/ADC_INT.v"/>
+        <Attr Name="ImportTime" Val="1520194816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v"/>
+        <Attr Name="ImportTime" Val="1519861616"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/ADC_SiTCP_RING.v"/>
+        <Attr Name="ImportTime" Val="1500912876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/AD_ADC_SPI.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/AD_ADC_SPI.v"/>
+        <Attr Name="ImportTime" Val="1473702950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/firmware/LEDSet.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/firmware/LEDSet.v"/>
+        <Attr Name="ImportTime" Val="1497480368"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/LOC_REG.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/LOC_REG.v"/>
+        <Attr Name="ImportTime" Val="1520182340"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/SIF_IF2_TEST.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/new/SIF_IF2_TEST.v"/>
+        <Attr Name="ImportTime" Val="1507669744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/SIF_IF2_selectio_wiz_TEST.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/new/SIF_IF2_selectio_wiz_TEST.v"/>
+        <Attr Name="ImportTime" Val="1507669896"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.V">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.V"/>
+        <Attr Name="ImportTime" Val="1473702950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/TIMER.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/TIMER.v"/>
+        <Attr Name="ImportTime" Val="1473702950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/WRAP_SiTCP_GMII_XC7A_32K.V">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/WRAP_SiTCP_GMII_XC7A_32K.V"/>
+        <Attr Name="ImportTime" Val="1473874708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/ADC_SiTCP_V20.v"/>
+        <Attr Name="ImportTime" Val="1520201036"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/src/AD_ADC_SIF.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/sources_1/imports/src/AD_ADC_SIF.v"/>
+        <Attr Name="ImportTime" Val="1473702950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ADC_SiTCP_V20"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/papillon_24ch/constrs_1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../original/20180305/20180305/20180305.srcs/constrs_2/imports/papillon_24ch/constrs_1.xdc"/>
+        <Attr Name="ImportTime" Val="1513201528"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/papillon_24ch/constrs_1.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="SYSCLK0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SYSCLK2"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mem_8_4K"/>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="divider"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_2"/>
+</GenRun>
