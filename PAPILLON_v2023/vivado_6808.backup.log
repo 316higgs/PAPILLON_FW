@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Apr 14 10:10:37 2023
+# Process ID: 6808
+# Current directory: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9488 C:\Users\81802\Desktop\PAPILLON_FW\PAPILLON_v2023\PAPILLON_v2023.xpr
+# Log file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/vivado.log
+# Journal file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 916.508 ; gain = 265.129
+update_compile_order -fileset sources_1
+save_project_as PAPILLON_v20230413 C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20230413 -force
+save_project_as: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1245.395 ; gain = 8.777
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 14 10:12:09 2023...

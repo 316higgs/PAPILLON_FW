@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Thu Apr 13 19:42:41 2023
+| Date                      : Thu Apr 20 15:03:04 2023
 | Host                      : DESKTOP-NG52DIC running 64-bit major release  (build 9200)
 | Command                   : report_io -file ADC_SiTCP_V20_io_placed.rpt
 | Design                    : ADC_SiTCP_V20
@@ -360,7 +360,7 @@ Table of Contents
 | N15        |              | High Range | IO_25_14                     | User IO       |             |      14 |            |      |                      |                      |         |            |           |          |      |                  |              |                   |              |
 | N16        |              |            | GND                          | GND           |             |         |            |      |                      |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | N17        |              | High Range | IO_L21P_T3_DQS_14            | User IO       |             |      14 |            |      |                      |                      |         |            |           |          |      |                  |              |                   |              |
-| N18        | X_LED[0]     | High Range | IO_L17P_T2_A26_15            | TRISTATE      | LVCMOS33    |      15 |         12 | SLOW |                      |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| N18        | X_LED[0]     | High Range | IO_L17P_T2_A26_15            | OUTPUT        | LVCMOS33    |      15 |         12 | SLOW |                      |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | N19        | X_LED[1]     | High Range | IO_L17N_T2_A25_15            | OUTPUT        | LVCMOS33    |      15 |         12 | SLOW |                      |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | N20        | X_LED[2]     | High Range | IO_L18P_T2_A24_15            | OUTPUT        | LVCMOS33    |      15 |         12 | SLOW |                      |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | N21        |              | High Range | VCCO_15                      | VCCO          |             |      15 |            |      |                      |                      |    3.30 |            |           |          |      |                  |              |                   |              |

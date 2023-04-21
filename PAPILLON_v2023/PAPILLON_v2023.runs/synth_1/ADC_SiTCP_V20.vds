@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu Apr 13 19:38:14 2023
-# Process ID: 8568
+# Start of session at: Thu Apr 20 14:58:41 2023
+# Process ID: 9664
 # Current directory: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1
 # Command line: vivado.exe -log ADC_SiTCP_V20.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ADC_SiTCP_V20.tcl
 # Log file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/ADC_SiTCP_V20.vds
@@ -16,18 +16,18 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13192 
+INFO: Helper process launched with PID 6580 
 WARNING: [Synth 8-2306] macro SYN_DATE redefined [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:15]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 989.359 ; gain = 242.230
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 989.121 ; gain = 242.941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_V20' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:37]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 	Parameter CH_NUM bound to: 24 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'SYSCLK0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/SYSCLK0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'SYSCLK0' (1#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/SYSCLK0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'SYSCLK2' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/SYSCLK2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'SYSCLK2' (2#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/SYSCLK2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SYSCLK0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/SYSCLK0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SYSCLK0' (1#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/SYSCLK0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SYSCLK2' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/SYSCLK2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SYSCLK2' (2#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/SYSCLK2_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49681]
 	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
@@ -112,69 +112,69 @@ INFO: [Synth 8-6157] synthesizing module 'BUFR' [C:/Xilinx/Vivado/2019.2/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFR' (11#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1402]
 INFO: [Synth 8-6155] done synthesizing module 'SIF_IF2_selectio_wiz_TEST' (12#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/new/SIF_IF2_selectio_wiz_TEST.v:56]
 INFO: [Synth 8-6155] done synthesizing module 'SIF_IF2_TEST' (13#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/new/SIF_IF2_TEST.v:58]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/fifo_generator_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (14#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (14#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/fifo_generator_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_IF' (15#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/new/ADC_IF.v:2]
 INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_RING' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v:14]
-INFO: [Synth 8-6157] synthesizing module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/mem_8_4K_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mem_8_4K' (16#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/mem_8_4K_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/mem_8_4K_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_8_4K' (16#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/mem_8_4K_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_RING' (17#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v:14]
 INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_RAW' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:15]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:189]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:251]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:171]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:194]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:277]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
+WARNING: [Synth 8-689] width (22) of port connection 'addra' does not match port width (12) of module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:176]
 INFO: [Synth 8-6157] synthesizing module 'ADC_INT' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:20]
-INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/mult_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (18#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/mult_gen_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'mult_gen_1' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/mult_gen_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mult_gen_1' (19#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/mult_gen_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/divider_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'divider' (20#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/divider_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'mult_gen_2' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/mult_gen_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mult_gen_2' (21#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/mult_gen_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cordic_0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/cordic_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (22#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-8568-DESKTOP-NG52DIC/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (18#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_1' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_1' (19#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/divider_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (20#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/divider_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_2' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/mult_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_2' (21#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/mult_gen_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (22#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/.Xil/Vivado-9664-DESKTOP-NG52DIC/realtime/cordic_0_stub.v:6]
 WARNING: [Synth 8-6014] Unused sequential element FillPed_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:73]
 WARNING: [Synth 8-6014] Unused sequential element SumRawWD10_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:268]
 WARNING: [Synth 8-6014] Unused sequential element DelayedRawWD00_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:283]
 WARNING: [Synth 8-6014] Unused sequential element pedestal10_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:295]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_INT' (23#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:20]
-WARNING: [Synth 8-6014] Unused sequential element irTrgCunt_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:125]
+WARNING: [Synth 8-6014] Unused sequential element irTrgCunt_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:126]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_RAW' (24#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:15]
 INFO: [Synth 8-6157] synthesizing module 'LEDSet' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/firmware/LEDSet.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'LEDSet' (25#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/firmware/LEDSet.v:23]
@@ -203,12 +203,12 @@ INFO: [Synth 8-6155] done synthesizing module 'TIMER' (27#1) [C:/Users/81802/Des
 INFO: [Synth 8-6157] synthesizing module 'SiTCP_XC7A_32K_BBT_V80' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.V:18]
 INFO: [Synth 8-6155] done synthesizing module 'SiTCP_XC7A_32K_BBT_V80' (28#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.V:18]
 INFO: [Synth 8-6155] done synthesizing module 'WRAP_SiTCP_GMII_XC7A_32K' (29#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/WRAP_SiTCP_GMII_XC7A_32K.V:21]
-INFO: [Synth 8-6157] synthesizing module 'LOC_REG' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:25]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:653]
+INFO: [Synth 8-6157] synthesizing module 'LOC_REG' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:30]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:658]
 INFO: [Synth 8-6157] synthesizing module 'AD_ADC_SPI' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/AD_ADC_SPI.v:11]
 INFO: [Synth 8-6155] done synthesizing module 'AD_ADC_SPI' (30#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/AD_ADC_SPI.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'LOC_REG' (31#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:25]
-WARNING: [Synth 8-3848] Net SiTCP_MDIO in module/entity ADC_SiTCP_V20 does not have driver. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'LOC_REG' (31#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:30]
+WARNING: [Synth 8-3848] Net SiTCP_MDIO in module/entity ADC_SiTCP_V20 does not have driver. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:776]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_V20' (32#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:37]
 WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[1] driven by constant 0
 WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[0] driven by constant 0
@@ -314,7 +314,7 @@ WARNING: [Synth 8-3331] design ADC_INT has unconnected port ADC_PDSTL[151]
 WARNING: [Synth 8-3331] design ADC_INT has unconnected port ADC_PDSTL[150]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1079.359 ; gain = 332.230
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.367 ; gain = 333.188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -327,12 +327,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.359 ; gain = 332.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.367 ; gain = 333.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.359 ; gain = 332.230
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.367 ; gain = 333.188
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1090.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 1089.207 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'BUFGCTRL_CLK0' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 106 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -522,13 +522,13 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/ADC_SiTCP_V2
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1222.926 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1219.563 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 15 instances were transformed.
   FD => FDRE: 11 instances
   OBUFDS => OBUFDS: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1222.926 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1219.563 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC1_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC2_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC3_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
@@ -611,14 +611,14 @@ WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[8].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[9].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1222.926 ; gain = 475.797
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1219.563 ; gain = 473.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1222.926 ; gain = 475.797
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1219.563 ; gain = 473.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -711,13 +711,13 @@ Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/SquareBeamPosit
 Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/CalBeamWidth. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/multiplier_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1222.926 ; gain = 475.797
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1219.563 ; gain = 473.383
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3936] Found unconnected internal register 'irDelay_reg' and it is trimmed from '16' to '12' bits. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v:60]
 WARNING: [Synth 8-3936] Found unconnected internal register 'irMode_reg' and it is trimmed from '2' to '1' bits. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:112]
-WARNING: [Synth 8-3936] Found unconnected internal register 'irAddr_reg' and it is trimmed from '11' to '8' bits. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:213]
+WARNING: [Synth 8-3936] Found unconnected internal register 'irAddr_reg' and it is trimmed from '11' to '8' bits. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:218]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1222.926 ; gain = 475.797
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1219.563 ; gain = 473.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -736,11 +736,10 @@ Detailed RTL Component Info :
 	   3 Input     48 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
 	   2 Input     27 Bit       Adders := 2     
+	   2 Input     26 Bit       Adders := 1     
 	   3 Input     24 Bit       Adders := 1     
-	   2 Input     24 Bit       Adders := 1     
 	   2 Input     23 Bit       Adders := 1     
-	   2 Input     22 Bit       Adders := 2     
-	   2 Input     20 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 3     
 	   2 Input     18 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 3     
 	   2 Input     16 Bit       Adders := 2     
@@ -766,10 +765,11 @@ Detailed RTL Component Info :
 	               33 Bit    Registers := 1     
 	               32 Bit    Registers := 1     
 	               27 Bit    Registers := 2     
+	               26 Bit    Registers := 1     
 	               25 Bit    Registers := 1     
-	               24 Bit    Registers := 7     
+	               24 Bit    Registers := 6     
 	               23 Bit    Registers := 1     
-	               20 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
 	               17 Bit    Registers := 3     
 	               16 Bit    Registers := 20    
@@ -792,14 +792,14 @@ Detailed RTL Component Info :
 	   3 Input     48 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 2     
 	   2 Input     27 Bit        Muxes := 4     
-	   2 Input     26 Bit        Muxes := 2     
-	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     26 Bit        Muxes := 4     
+	   2 Input     25 Bit        Muxes := 3     
 	   4 Input     25 Bit        Muxes := 1     
-	   2 Input     24 Bit        Muxes := 8     
-	   2 Input     23 Bit        Muxes := 3     
-	   3 Input     20 Bit        Muxes := 1     
-	   2 Input     20 Bit        Muxes := 2     
-	   2 Input     19 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 6     
+	   2 Input     23 Bit        Muxes := 2     
+	   3 Input     22 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 2     
 	   2 Input     18 Bit        Muxes := 2     
 	   2 Input     17 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 8     
@@ -928,10 +928,9 @@ Detailed RTL Component Info :
 Module ADC_SiTCP_RAW 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     24 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
 	   2 Input     23 Bit       Adders := 1     
-	   2 Input     22 Bit       Adders := 2     
-	   2 Input     20 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 3     
 	   2 Input     18 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
@@ -940,9 +939,10 @@ Detailed RTL Component Info :
 	              384 Bit    Registers := 1     
 	              288 Bit    Registers := 1     
 	              192 Bit    Registers := 1     
-	               24 Bit    Registers := 4     
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
 	               23 Bit    Registers := 1     
-	               20 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
 	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 5     
@@ -954,11 +954,12 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 17    
 +---Muxes : 
 	   2 Input    288 Bit        Muxes := 1     
-	   2 Input     24 Bit        Muxes := 2     
-	   2 Input     23 Bit        Muxes := 3     
-	   3 Input     20 Bit        Muxes := 1     
-	   2 Input     20 Bit        Muxes := 2     
-	   2 Input     19 Bit        Muxes := 2     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   3 Input     22 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 2     
 	   2 Input     18 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 4     
 	   2 Input      6 Bit        Muxes := 2     
@@ -1091,7 +1092,7 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (LOC_REG/\
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (ADC_SiTCP_RAW/\irlen_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ADC_SiTCP_RAW/\irLength_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1222.926 ; gain = 475.797
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1219.563 ; gain = 473.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1103,13 +1104,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1222.926 ; gain = 475.797
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1219.563 ; gain = 473.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1222.926 ; gain = 475.797
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1219.563 ; gain = 473.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1121,7 +1122,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1228.180 ; gain = 481.051
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1220.879 ; gain = 474.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1145,13 +1146,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.941 ; gain = 484.813
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1225.582 ; gain = 479.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.941 ; gain = 484.813
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1225.582 ; gain = 479.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1170,25 +1171,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.941 ; gain = 484.813
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1225.582 ; gain = 479.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.941 ; gain = 484.813
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1225.582 ; gain = 479.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.941 ; gain = 484.813
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1225.582 ; gain = 479.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.941 ; gain = 484.813
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1225.582 ; gain = 479.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1323,12 +1324,12 @@ Report Cell Usage:
 |85    |BUFGCTRL               |     1|
 |86    |BUFIO                  |     3|
 |87    |BUFR                   |     3|
-|88    |CARRY4                 |   765|
+|88    |CARRY4                 |   767|
 |89    |IDELAYCTRL             |     1|
 |90    |IDELAYE2               |    27|
 |91    |ISERDESE2              |    27|
 |92    |LUT1                   |   333|
-|93    |LUT2                   |  2411|
+|93    |LUT2                   |  2415|
 |94    |LUT3                   |   180|
 |95    |LUT4                   |   220|
 |96    |LUT5                   |   204|
@@ -1340,22 +1341,22 @@ Report Cell Usage:
 |102   |FD                     |    10|
 |103   |FDCE                   |   896|
 |104   |FDPE                   |    13|
-|105   |FDRE                   |  5537|
+|105   |FDRE                   |  5541|
 |106   |FDSE                   |    56|
 |107   |IBUF                   |    24|
 |108   |IBUFDS                 |    30|
 |109   |IOBUF                  |     3|
-|110   |OBUF                   |    73|
+|110   |OBUF                   |    74|
 |111   |OBUFDS                 |     4|
-|112   |OBUFT                  |     5|
+|112   |OBUFT                  |     4|
 +------+-----------------------+------+
 
 Report Instance Areas: 
 +------+-----------------+----------------------------+------+
 |      |Instance         |Module                      |Cells |
 +------+-----------------+----------------------------+------+
-|1     |top              |                            | 14041|
-|2     |  ADC_SiTCP_RAW  |ADC_SiTCP_RAW               |  9702|
+|1     |top              |                            | 14051|
+|2     |  ADC_SiTCP_RAW  |ADC_SiTCP_RAW               |  9712|
 |3     |    ADC_INT      |ADC_INT                     |  7986|
 |4     |  LOC_REG        |LOC_REG                     |  1678|
 |5     |    AD_ADC_SPI   |AD_ADC_SPI                  |   147|
@@ -1374,11 +1375,11 @@ Report Instance Areas:
 |18    |    TIMER        |TIMER                       |    90|
 +------+-----------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.941 ; gain = 484.813
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1225.582 ; gain = 479.402
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 296 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1231.941 ; gain = 341.246
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1231.941 ; gain = 484.813
+Synthesis finished with 0 errors, 0 critical warnings and 295 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1225.582 ; gain = 339.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1225.582 ; gain = 479.402
 INFO: [Project 1-571] Translating synthesized netlist
 Release 14.7 - ngc2edif P_INT.20190617 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -1445,14 +1446,14 @@ ngc2edif: Total memory usage is 4342676 kilobytes
 Reading core file 'C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.ngc' for (cell view 'SiTCP_XC7A_32K_BBT_V80', library 'work')
 Parsing EDIF File [./.ngc2edfcache/SiTCP_XC7A_32K_BBT_V80_ngc_871fe0c8.edif]
 Finished Parsing EDIF File [./.ngc2edfcache/SiTCP_XC7A_32K_BBT_V80_ngc_871fe0c8.edif]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.199 . Memory (MB): peak = 1249.582 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1243.668 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'BUFGCTRL_CLK0' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 6559 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 6561 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20190617
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 4 inverter(s) to 29 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1266.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1261.723 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3577 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 272 instances
@@ -1470,10 +1471,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 122 Infos, 243 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1266.246 ; gain = 809.895
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1266.246 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1261.723 ; gain = 804.859
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1261.723 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.runs/synth_1/ADC_SiTCP_V20.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ADC_SiTCP_V20_utilization_synth.rpt -pb ADC_SiTCP_V20_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 13 19:39:11 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 20 14:59:42 2023...

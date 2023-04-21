@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Thu Apr 13 19:45:02 2023
+| Date             : Thu Apr 20 15:05:23 2023
 | Host             : DESKTOP-NG52DIC running 64-bit major release  (build 9200)
 | Command          : report_power -file ADC_SiTCP_V20_power_routed.rpt -pb ADC_SiTCP_V20_power_summary_routed.pb -rpx ADC_SiTCP_V20_power_routed.rpx
 | Design           : ADC_SiTCP_V20
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.169        |
+| Total On-Chip Power (W)  | 1.174        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.055        |
+| Dynamic (W)              | 1.061        |
 | Device Static (W)        | 0.114        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 81.9         |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.179 |       20 |       --- |             --- |
-| Slice Logic              |     0.119 |    62483 |       --- |             --- |
-|   LUT as Logic           |     0.085 |    17697 |     63400 |           27.91 |
-|   CARRY4                 |     0.022 |     3277 |     15850 |           20.68 |
-|   Register               |     0.011 |    35469 |    126800 |           27.97 |
+| Clocks                   |     0.183 |       20 |       --- |             --- |
+| Slice Logic              |     0.119 |    62453 |       --- |             --- |
+|   LUT as Logic           |     0.084 |    17710 |     63400 |           27.93 |
+|   CARRY4                 |     0.022 |     3279 |     15850 |           20.69 |
+|   Register               |     0.011 |    35434 |    126800 |           27.94 |
 |   LUT as Shift Register  |     0.001 |      339 |     19000 |            1.78 |
 |   F7/F8 Muxes            |    <0.001 |      495 |     63400 |            0.78 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   LUT as Distributed RAM |    <0.001 |       32 |     19000 |            0.17 |
 |   Others                 |     0.000 |     4142 |       --- |             --- |
-| Signals                  |     0.098 |    43483 |       --- |             --- |
+| Signals                  |     0.099 |    43452 |       --- |             --- |
 | Block RAM                |     0.029 |     89.5 |       135 |           66.30 |
 | MMCM                     |     0.219 |        2 |         6 |           33.33 |
 | DSPs                     |     0.004 |        8 |       240 |            3.33 |
-| I/O                      |     0.407 |      173 |       285 |           60.70 |
+| I/O                      |     0.408 |      173 |       285 |           60.70 |
 | Static Power             |     0.114 |          |           |                 |
-| Total                    |     1.169 |          |           |                 |
+| Total                    |     1.174 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.476 |       0.457 |      0.019 |
+| Vccint    |       1.000 |     0.481 |       0.462 |      0.019 |
 | Vccaux    |       1.800 |     0.203 |       0.185 |      0.018 |
 | Vcco33    |       3.300 |     0.011 |       0.007 |      0.004 |
 | Vcco25    |       2.500 |     0.100 |       0.096 |      0.004 |
@@ -161,7 +161,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| ADC_SiTCP_V20            |     1.055 |
+| ADC_SiTCP_V20            |     1.061 |
 |   ADC1_IF                |     0.088 |
 |     adc                  |     0.078 |
 |       inst               |     0.078 |
@@ -177,11 +177,11 @@ Table of Contents
 |       inst               |     0.078 |
 |     eras_fifo            |     0.006 |
 |       U0                 |     0.006 |
-|   ADC_SiTCP_RAW          |     0.312 |
-|     ADC_INT              |     0.307 |
-|       CalBeamPosition    |     0.047 |
+|   ADC_SiTCP_RAW          |     0.316 |
+|     ADC_INT              |     0.311 |
+|       CalBeamPosition    |     0.048 |
 |       CalBeamWidth       |     0.029 |
-|       CalPartBeamWidth   |     0.200 |
+|       CalPartBeamWidth   |     0.202 |
 |       multiplier_0       |     0.003 |
 |       multiplier_1       |     0.003 |
 |   ADC_SiTCP_RING         |     0.002 |
@@ -191,10 +191,10 @@ Table of Contents
 |   SYSCLK2                |     0.097 |
 |     inst                 |     0.097 |
 |   SiTCP                  |     0.051 |
-|     SiTCP                |     0.051 |
-|   dbg_hub                |     0.004 |
-|     inst                 |     0.004 |
-|       BSCANID.u_xsdbm_id |     0.004 |
+|     SiTCP                |     0.050 |
+|   dbg_hub                |     0.003 |
+|     inst                 |     0.003 |
+|       BSCANID.u_xsdbm_id |     0.003 |
 |   u_ila_0                |     0.012 |
 |     inst                 |     0.012 |
 |       ila_core_inst      |     0.012 |

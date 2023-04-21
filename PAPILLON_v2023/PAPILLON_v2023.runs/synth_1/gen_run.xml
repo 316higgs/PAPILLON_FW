@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1681382292">
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1681970319">
   <File Type="PA-TCL" Name="ADC_SiTCP_V20.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ADC_SiTCP_V20_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ADC_SiTCP_V20_reports.tcl"/>

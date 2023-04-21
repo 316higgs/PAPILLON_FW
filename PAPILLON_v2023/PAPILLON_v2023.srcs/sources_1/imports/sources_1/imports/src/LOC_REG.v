@@ -14,11 +14,16 @@
 *******************************************************************************/
 
 //////////////////////////////////////
-// PAPILLON FW ver. 2023.04.13
+// PAPILLON FW ver. 2023.04.20
 // -Added X_LED[1] for debug of J0S[2]
-//
+// -Debugged tag trigger mode
+//  (waveform may be shifted)
+//  26 bit counter for waiting for tag trigger
+// -22 bit counter(wa) for preventing initialization
+// -Added X_LED[0] for trigger mode
+// 
 //////////////////////////////////////
-`define SYN_DATE	32'h2023_0413
+`define SYN_DATE	32'h2023_0420
 `define FPGA_VER	8'h01
 
 

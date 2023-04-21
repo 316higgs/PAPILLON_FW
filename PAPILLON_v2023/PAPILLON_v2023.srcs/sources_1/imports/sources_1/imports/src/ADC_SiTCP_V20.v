@@ -637,7 +637,8 @@ module ADC_SiTCP_V20(
     // assign RAW_NUM_TAG[2:0]=3'd4;
 	
 	wire tag_mode;
-	assign	tag_mode = DIP_SW[1];
+	assign tag_mode = DIP_SW[1];
+    assign X_LED[0] = DIP_SW[1];
 
     //LED for debugging of J0S[2]
     reg beam_trg_led;

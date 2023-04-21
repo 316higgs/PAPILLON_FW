@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Apr 13 19:39:11 2023
+| Date         : Thu Apr 20 14:59:42 2023
 | Host         : DESKTOP-NG52DIC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ADC_SiTCP_V20_utilization_synth.rpt -pb ADC_SiTCP_V20_utilization_synth.pb
 | Design       : ADC_SiTCP_V20
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                |  7779 |     0 |     63400 | 12.27 |
-|   LUT as Logic             |  7581 |     0 |     63400 | 11.96 |
+| Slice LUTs*                |  7780 |     0 |     63400 | 12.27 |
+|   LUT as Logic             |  7582 |     0 |     63400 | 11.96 |
 |   LUT as Memory            |   198 |     0 |     19000 |  1.04 |
 |     LUT as Distributed RAM |     8 |     0 |           |       |
 |     LUT as Shift Register  |   190 |     0 |           |       |
-| Slice Registers            | 10538 |     0 |    126800 |  8.31 |
-|   Register as Flip Flop    | 10538 |     0 |    126800 |  8.31 |
+| Slice Registers            | 10542 |     0 |    126800 |  8.31 |
+|   Register as Flip Flop    | 10542 |     0 |    126800 |  8.31 |
 |   Register as Latch        |     0 |     0 |    126800 |  0.00 |
 | F7 Muxes                   |   351 |     0 |     31700 |  1.11 |
 | F8 Muxes                   |   140 |     0 |     15850 |  0.88 |
@@ -59,7 +59,7 @@ Table of Contents
 | 117   |          Yes |           - |          Set |
 | 1699  |          Yes |           - |        Reset |
 | 117   |          Yes |         Set |            - |
-| 8605  |          Yes |       Reset |            - |
+| 8609  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -157,12 +157,12 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       | 8605 |        Flop & Latch |
-| LUT2       | 3112 |                 LUT |
+| FDRE       | 8609 |        Flop & Latch |
+| LUT2       | 3116 |                 LUT |
 | LUT6       | 1768 |                 LUT |
 | FDCE       | 1699 |        Flop & Latch |
 | LUT3       | 1179 |                 LUT |
-| CARRY4     | 1038 |          CarryLogic |
+| CARRY4     | 1040 |          CarryLogic |
 | LUT1       |  765 |                 LUT |
 | LUT4       |  589 |                 LUT |
 | LUT5       |  483 |                 LUT |
@@ -172,15 +172,15 @@ Table of Contents
 | FDPE       |  117 |        Flop & Latch |
 | SRLC16E    |  103 |  Distributed Memory |
 | SRL16E     |   87 |  Distributed Memory |
-| OBUF       |   73 |                  IO |
+| OBUF       |   74 |                  IO |
 | IBUFDS     |   30 |                  IO |
 | ISERDESE2  |   27 |                  IO |
 | IDELAYE2   |   27 |                  IO |
 | IBUF       |   27 |                  IO |
 | RAMB36E1   |    9 |        Block Memory |
 | RAMS32     |    8 |  Distributed Memory |
-| OBUFT      |    8 |                  IO |
 | OBUFDS     |    8 |                  IO |
+| OBUFT      |    7 |                  IO |
 | RAMB18E1   |    5 |        Block Memory |
 | ODDR       |    4 |                  IO |
 | INV        |    4 |                 LUT |

@@ -117,7 +117,8 @@ module ADC_SiTCP_RAW(
 	reg		[31:0]		irTrgCunt;
 	reg		[3:0]		irSod;
 	//reg		[12:0]		wa;
-	reg		[19:0]		wa;
+	//reg		[19:0]		wa;
+	reg		[21:0]		wa;
 	//reg rdBusy			;
 	reg mBusy; //ON during buffer data writing to SiTCP transmission
 	always@ (posedge SYSCLK) begin
@@ -125,7 +126,8 @@ module ADC_SiTCP_RAW(
 	       irTrgCunt[31:0] <= 32'd0;
 	       irSod[3:0]      <= 4'd0;
 	       //wa[12:0]        <= 13'd0;
-		   wa[19:0]        <= 20'd0;
+		   //wa[19:0]        <= 20'd0;
+		   wa[21:0]        <= 22'd0;
 		end else begin
 	       if(ENABLE == 1)begin
 				irAdcData[12*24-1:0] <= RING_ADC[12*24-1:0]; // 24ch
@@ -139,10 +141,12 @@ module ADC_SiTCP_RAW(
 
 				if(RING_SOD & !mBusy)begin
 	       		  //wa[12:0]	<= 13'h1000;   //????��?��??��?��???��?��??��?��ŏ�????��?��??��?��???��?��??��?��bit????��?��??��?��???��?��??��?��𗧂�????��?��??��?��???��?��??��?��グ????��?��??��?��???��?��??��?��āA????��?��??��?��???��?��??��?��????��?��??��?��???��?��??��?��????��?��??��?��???��?��??��?��̏�????��?��??��?��???��?��??��?��????��?��??��?��???��?��??��?��????��?��??��?��???��?��??��?��ɂ͂�????��?��??��?��???��?��??��?��点????��?��??��?��???��?��??��?��????��?��??��?��???��?��??��?��
-				  wa[19:0]	<= 20'h80000;
+				  //wa[19:0]	<= 20'h80000;
+				  wa[21:0]	<= 22'h200000;
 				end else begin
 			      //wa[12:0]	<= (wa[12] ? wa[12:0] + 13'd1 : 13'd0);
-				  wa[19:0]	<= (wa[19] ? wa[19:0] + 20'd1 : 20'd0);
+				  //wa[19:0]	<= (wa[19] ? wa[19:0] + 20'd1 : 20'd0);
+				  wa[21:0]	<= (wa[21] ? wa[21:0] + 22'd1 : 22'd0);
 				end
 			end
 		end
@@ -156,10 +160,11 @@ module ADC_SiTCP_RAW(
 	wire we;
     assign	wd[12*24-1:0]= irAdcData[12*24-1:0];  //24ch [287:0]
 	//assign	we= wa[12];
-	assign	we= wa[19];
+	//assign	we= wa[19];
+	assign we= wa[21];
 	
 	reg  [17:0]      ra;
-    wire [12*24-1:0] rd;  //24ch
+    wire [12*24-1:0] rd;  //24ch*12 bit
     generate
     genvar i;
     for (i=0; i<36; i=i+1) begin: mem_generate
@@ -168,7 +173,7 @@ module ADC_SiTCP_RAW(
         .ena        (ENABLE),      // input wire ena
         .wea        (we),      // input wire [0 : 0] wea
         //.addra      (wa[11:0]),  // input wire [11 : 0] addra
-		.addra      (wa[18:0]),  // input wire [11 : 0] addra
+		.addra      (wa[21:0]),  // input wire [11 : 0] addra
         .dina       (wd[8*(i+1)-1:8*i]),    // input wire [7 : 0] dina
         .clkb       (SYSCLK),    // input wire clkb
         .enb        (1'b1),      // input wire enb
@@ -213,36 +218,57 @@ module ADC_SiTCP_RAW(
 
 
     reg FinCalWindow;
-    reg [23:0] FinCal_counter;
+    //reg [23:0] FinCal_counter;  //too short for TS?
+	reg [25:0] FinCal_counter;
 	//reg	[15:0] BeamPosition;
 	//reg	[23:0] BeamWidth;
 	//reg        Interlock;
     always@ (posedge SYSCLK) begin
       if (sRST) begin
         FinCalWindow <= 1'b0;
-        FinCal_counter <= 24'd0;
+        //FinCal_counter <= 24'd0;
+		FinCal_counter <= 26'd0;
 		//BeamPosition[15:0] <= 16'd0;
 		//BeamWidth[23:0]    <= 24'b0;
 		//Interlock          <= REG_INTERLOCK[0];
       end
       else begin
         if (INT_END==1'b1) begin
-          FinCal_counter[23:0] <= {1'b1, 23'b0};
+          //FinCal_counter[23:0] <= {1'b1, 23'b0};
+		  FinCal_counter[25:0] <= {1'b1, 25'b0};
 		  //BeamPosition[15:0]   <= BEAM_POSITION[15:0];
 		  //BeamWidth[23:0]      <= BEAM_WIDTH[23:0];
 		  //Interlock            <= INT_INTERLOCK;
         end
-        else if (FinCal_counter[23]==1'b1) begin
-          FinCal_counter[23:0] <= FinCal_counter[23:0] + 24'd1;
+        //else if (FinCal_counter[23]==1'b1) begin
+		else if (FinCal_counter[25]==1'b1) begin
+          //FinCal_counter[23:0] <= FinCal_counter[23:0] + 24'd1;
+		  FinCal_counter[25:0] <= FinCal_counter[25:0] + 26'd1;
           FinCalWindow <= 1'b1;
         end
-        else if (FinCal_counter[23]==1'b0) begin
-          FinCal_counter[23:0] <= 24'd0;
+        //else if (FinCal_counter[23]==1'b0) begin
+		else if (FinCal_counter[25]==1'b0) begin
+          //FinCal_counter[23:0] <= 24'd0;
+		  FinCal_counter[25:0] <= 26'd0;
           FinCalWindow <= 1'b0;
         end
       end
     end
-    assign INT_TAG = FinCalWindow;
+
+    /*
+	always@ (posedge SYSCLK) begin
+      if (sRST) begin
+        FinCalWindow <= 1'b0;
+		//FinCal_counter <= 36'd0;
+      end
+      else begin
+        if (INT_END==1'b1) begin
+		  FinCalWindow = 1'b1;
+        end
+      end
+    end
+	*/
+	assign INT_TAG = FinCalWindow;
 
 //------------------------------------------------------------------------------
 //   read start

@@ -2,128 +2,37 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu Apr 13 10:04:52 2023
-# Process ID: 11352
+# Start of session at: Fri Apr 14 10:12:17 2023
+# Process ID: 11796
 # Current directory: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5948 C:\Users\81802\Desktop\PAPILLON_FW\PAPILLON_v2023\PAPILLON_v2023.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3272 C:\Users\81802\Desktop\PAPILLON_FW\PAPILLON_v2023\PAPILLON_v2023.xpr
 # Log file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/vivado.log
 # Journal file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-open_run synth_1 -name synth_1
-delete_debug_core [get_debug_cores {u_ila_0 }]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-connect_debug_port u_ila_0/clk [get_nets [list SYSCLK0/inst/clk_out1 ]]
-set_property port_width 3 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {ADC_SiTCP_RAW/RAW_NUM_TAG[0]} {ADC_SiTCP_RAW/RAW_NUM_TAG[1]} {ADC_SiTCP_RAW/RAW_NUM_TAG[2]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 2 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {ADC_SiTCP_RAW/srTagIn[0]} {ADC_SiTCP_RAW/srTagIn[1]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 24 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list {LOC_REG/REG_THRESHOLD_WIDTH[0]} {LOC_REG/REG_THRESHOLD_WIDTH[1]} {LOC_REG/REG_THRESHOLD_WIDTH[2]} {LOC_REG/REG_THRESHOLD_WIDTH[3]} {LOC_REG/REG_THRESHOLD_WIDTH[4]} {LOC_REG/REG_THRESHOLD_WIDTH[5]} {LOC_REG/REG_THRESHOLD_WIDTH[6]} {LOC_REG/REG_THRESHOLD_WIDTH[7]} {LOC_REG/REG_THRESHOLD_WIDTH[8]} {LOC_REG/REG_THRESHOLD_WIDTH[9]} {LOC_REG/REG_THRESHOLD_WIDTH[10]} {LOC_REG/REG_THRESHOLD_WIDTH[11]} {LOC_REG/REG_THRESHOLD_WIDTH[12]} {LOC_REG/REG_THRESHOLD_WIDTH[13]} {LOC_REG/REG_THRESHOLD_WIDTH[14]} {LOC_REG/REG_THRESHOLD_WIDTH[15]} {LOC_REG/REG_THRESHOLD_WIDTH[16]} {LOC_REG/REG_THRESHOLD_WIDTH[17]} {LOC_REG/REG_THRESHOLD_WIDTH[18]} {LOC_REG/REG_THRESHOLD_WIDTH[19]} {LOC_REG/REG_THRESHOLD_WIDTH[20]} {LOC_REG/REG_THRESHOLD_WIDTH[21]} {LOC_REG/REG_THRESHOLD_WIDTH[22]} {LOC_REG/REG_THRESHOLD_WIDTH[23]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 16 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list {LOC_REG/REG_THRESHOLD[0]} {LOC_REG/REG_THRESHOLD[1]} {LOC_REG/REG_THRESHOLD[2]} {LOC_REG/REG_THRESHOLD[3]} {LOC_REG/REG_THRESHOLD[4]} {LOC_REG/REG_THRESHOLD[5]} {LOC_REG/REG_THRESHOLD[6]} {LOC_REG/REG_THRESHOLD[7]} {LOC_REG/REG_THRESHOLD[8]} {LOC_REG/REG_THRESHOLD[9]} {LOC_REG/REG_THRESHOLD[10]} {LOC_REG/REG_THRESHOLD[11]} {LOC_REG/REG_THRESHOLD[12]} {LOC_REG/REG_THRESHOLD[13]} {LOC_REG/REG_THRESHOLD[14]} {LOC_REG/REG_THRESHOLD[15]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 2 [get_debug_ports u_ila_0/probe4]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
-connect_debug_port u_ila_0/probe4 [get_nets [list {X_LED_OBUF[1]} {X_LED_OBUF[3]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe5]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
-connect_debug_port u_ila_0/probe5 [get_nets [list ADC_SiTCP_RAW/ADC_INT/INT_TAG ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe6]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
-connect_debug_port u_ila_0/probe6 [get_nets [list ADC_SiTCP_RAW/INT_TAG ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe7]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
-connect_debug_port u_ila_0/probe7 [get_nets [list INTERLOCK_OBUF ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe8]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
-connect_debug_port u_ila_0/probe8 [get_nets [list ADC_SiTCP_RAW/RAW_TRG_TAG ]]
-save_constraints
-close_design
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
 launch_simulation
 open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
 source ADC_SiTCP_RAW_TB.tcl
-close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top ADC_INT_TB [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_INT_TB.tcl
+relaunch_sim
 run all
 relaunch_sim
 run all
+relaunch_sim
 run all
+relaunch_sim
 run all
 save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
+relaunch_sim
+run all
 close_sim
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top ADC_SiTCP_RAW_TB [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
 launch_simulation
 open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
 source ADC_SiTCP_RAW_TB.tcl
 run all
 run all
-save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
+relaunch_sim
 close_sim
 launch_simulation
 open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
@@ -139,24 +48,20 @@ close_sim
 launch_simulation
 open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
 source ADC_SiTCP_RAW_TB.tcl
-close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top ADC_INT_TB [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_INT_TB.tcl
 run all
-save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
 close_sim
 launch_simulation
 open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_INT_TB.tcl
+source ADC_SiTCP_RAW_TB.tcl
 run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
+source ADC_SiTCP_RAW_TB.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
+source ADC_SiTCP_RAW_TB.tcl
 run all
 close_sim
 reset_run synth_1
@@ -173,27 +78,14 @@ launch_runs impl_1 -jobs 12
 wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top ADC_SiTCP_RAW_TB [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_SiTCP_RAW_TB.tcl
-run all
-relaunch_sim
-relaunch_sim
-run all
-relaunch_sim
-relaunch_sim
-run all
-relaunch_sim
-run all
-save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
-close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
 reset_run synth_1
 launch_runs synth_1 -jobs 12
 wait_on_run synth_1
@@ -201,41 +93,16 @@ launch_runs impl_1 -jobs 12
 wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top ADC_INT_TB [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_INT_TB.tcl
-run all
-save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
-close_sim
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top ADC_SiTCP_RAW_TB [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
 launch_simulation
 open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
 source ADC_SiTCP_RAW_TB.tcl
 run all
-relaunch_sim
-run all
-save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
 close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
 reset_run synth_1
 launch_runs synth_1 -jobs 12
 wait_on_run synth_1
@@ -243,49 +110,6 @@ launch_runs impl_1 -jobs 12
 wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1
-launch_simulation -mode post-synthesis -type functional
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_SiTCP_RAW_TB.tcl
-run all
-relaunch_sim
-run all
-relaunch_sim
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-relaunch_sim
-run all
-save_wave_config {C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg}
-close_sim
-close_design
-launch_simulation
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_SiTCP_RAW_TB.tcl
-run all
-close_sim
-launch_simulation
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_SiTCP_RAW_TB.tcl
-run all
-close_sim
-launch_simulation
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_SiTCP_RAW_TB.tcl
-run all
-close_sim
-launch_simulation
-open_wave_config C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v2023/PAPILLON_v2023.srcs/sim_1/imports/PAPILLON_v4raw/ADC_SiTCP_RAW_TB_behav.wcfg
-source ADC_SiTCP_RAW_TB.tcl
-run all
-close_sim
 reset_run synth_1
 launch_runs synth_1 -jobs 12
 wait_on_run synth_1
