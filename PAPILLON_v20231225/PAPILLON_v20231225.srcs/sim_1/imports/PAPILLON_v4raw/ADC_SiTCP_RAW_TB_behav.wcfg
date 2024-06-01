@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ADC_SiTCP_RAW_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ADC_SiTCP_RAW_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="8905000001fs"></ZoomEndTime>
+      <Cursor1Time time="1190921875fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="234"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/SYSCLK" type="logic">
+      <obj_property name="ElementShortName">SYSCLK</obj_property>
+      <obj_property name="ObjectShortName">SYSCLK</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/sRST" type="logic">
+      <obj_property name="ElementShortName">sRST</obj_property>
+      <obj_property name="ObjectShortName">sRST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/tag_mode" type="logic">
+      <obj_property name="ElementShortName">tag_mode</obj_property>
+      <obj_property name="ObjectShortName">tag_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="group116" type="group">
+      <obj_property name="label">Data Formatter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/RING_SOD" type="logic">
+         <obj_property name="ElementShortName">RING_SOD</obj_property>
+         <obj_property name="ObjectShortName">RING_SOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/RING_TRG_NUM" type="array">
+         <obj_property name="ElementShortName">RING_TRG_NUM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RING_TRG_NUM[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/RING_ADC" type="array">
+         <obj_property name="ElementShortName">RING_ADC[287:0]</obj_property>
+         <obj_property name="ObjectShortName">RING_ADC[287:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/wa" type="array">
+         <obj_property name="ElementShortName">wa[12:0]</obj_property>
+         <obj_property name="ObjectShortName">wa[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="vbus106" type="vbus">
+         <obj_property name="label">wa[12]</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/wa[12]" type="logic">
+            <obj_property name="ElementShortName">[12]</obj_property>
+            <obj_property name="ObjectShortName">[12]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/we" type="logic">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject fp_name="group77" type="group">
+         <obj_property name="label">Interface</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/BeamPosition" type="array">
+            <obj_property name="ElementShortName">BeamPosition[15:0]</obj_property>
+            <obj_property name="ObjectShortName">BeamPosition[15:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/BeamWidth" type="array">
+            <obj_property name="ElementShortName">BeamWidth[23:0]</obj_property>
+            <obj_property name="ObjectShortName">BeamWidth[23:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/INT_END" type="logic">
+            <obj_property name="ElementShortName">INT_END</obj_property>
+            <obj_property name="ObjectShortName">INT_END</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/INT_TAG" type="logic">
+            <obj_property name="ElementShortName">INT_TAG</obj_property>
+            <obj_property name="ObjectShortName">INT_TAG</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/RAW_TRG_TAG" type="logic">
+            <obj_property name="ElementShortName">RAW_TRG_TAG</obj_property>
+            <obj_property name="ObjectShortName">RAW_TRG_TAG</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/srTagIn" type="array">
+            <obj_property name="ElementShortName">srTagIn[1:0]</obj_property>
+            <obj_property name="ObjectShortName">srTagIn[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/intTagIn" type="logic">
+            <obj_property name="ElementShortName">intTagIn</obj_property>
+            <obj_property name="ObjectShortName">intTagIn</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/tag_count" type="array">
+            <obj_property name="ElementShortName">tag_count[7:0]</obj_property>
+            <obj_property name="ObjectShortName">tag_count[7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/sTAG" type="logic">
+            <obj_property name="ElementShortName">sTAG</obj_property>
+            <obj_property name="ObjectShortName">sTAG</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/eTAG" type="logic">
+            <obj_property name="ElementShortName">eTAG</obj_property>
+            <obj_property name="ObjectShortName">eTAG</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/tag_start" type="logic">
+            <obj_property name="ElementShortName">tag_start</obj_property>
+            <obj_property name="ObjectShortName">tag_start</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group92" type="group">
+         <obj_property name="label">Sender</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/READ_START" type="logic">
+            <obj_property name="ElementShortName">READ_START</obj_property>
+            <obj_property name="ObjectShortName">READ_START</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/readstart" type="logic">
+            <obj_property name="ElementShortName">readstart</obj_property>
+            <obj_property name="ObjectShortName">readstart</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/rdBusy" type="logic">
+            <obj_property name="ElementShortName">rdBusy</obj_property>
+            <obj_property name="ObjectShortName">rdBusy</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/rdEnb" type="logic">
+            <obj_property name="ElementShortName">rdEnb</obj_property>
+            <obj_property name="ObjectShortName">rdEnb</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/countadd" type="array">
+            <obj_property name="ElementShortName">countadd[5:0]</obj_property>
+            <obj_property name="ObjectShortName">countadd[5:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/countmem" type="array">
+            <obj_property name="ElementShortName">countmem[11:0]</obj_property>
+            <obj_property name="ObjectShortName">countmem[11:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ra" type="array">
+            <obj_property name="ElementShortName">ra[17:0]</obj_property>
+            <obj_property name="ObjectShortName">ra[17:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/rd" type="array">
+            <obj_property name="ElementShortName">rd[287:0]</obj_property>
+            <obj_property name="ObjectShortName">rd[287:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/rdRa" type="array">
+            <obj_property name="ElementShortName">rdRa[5:0]</obj_property>
+            <obj_property name="ObjectShortName">rdRa[5:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/hdSend" type="logic">
+            <obj_property name="ElementShortName">hdSend</obj_property>
+            <obj_property name="ObjectShortName">hdSend</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/hdEnb" type="logic">
+            <obj_property name="ElementShortName">hdEnb</obj_property>
+            <obj_property name="ObjectShortName">hdEnb</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ha" type="array">
+            <obj_property name="ElementShortName">ha[5:0]</obj_property>
+            <obj_property name="ObjectShortName">ha[5:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/rdHa" type="array">
+            <obj_property name="ElementShortName">rdHa[4:0]</obj_property>
+            <obj_property name="ObjectShortName">rdHa[4:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/hdVal" type="logic">
+            <obj_property name="ElementShortName">hdVal</obj_property>
+            <obj_property name="ObjectShortName">hdVal</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/dlyHdVal" type="logic">
+            <obj_property name="ElementShortName">dlyHdVal</obj_property>
+            <obj_property name="ObjectShortName">dlyHdVal</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/SYSCLK" type="logic">
+         <obj_property name="ElementShortName">SYSCLK</obj_property>
+         <obj_property name="ObjectShortName">SYSCLK</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/rdHdData" type="array">
+         <obj_property name="ElementShortName">rdHdData[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rdHdData[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/rdAdcData" type="array">
+         <obj_property name="ElementShortName">rdAdcData[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rdAdcData[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group230" type="group">
+      <obj_property name="label">Initialization and start reading</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/WRITE_ENABLE" type="logic">
+         <obj_property name="ElementShortName">WRITE_ENABLE</obj_property>
+         <obj_property name="ObjectShortName">WRITE_ENABLE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/intwe" type="logic">
+         <obj_property name="ElementShortName">intwe</obj_property>
+         <obj_property name="ObjectShortName">intwe</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/initADC_INT" type="logic">
+         <obj_property name="ElementShortName">initADC_INT</obj_property>
+         <obj_property name="ObjectShortName">initADC_INT</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group39" type="group">
+      <obj_property name="label">Pedestal Calculation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/RawWD00" type="array">
+         <obj_property name="ElementShortName">RawWD00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">RawWD00[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/RawWD01" type="array">
+         <obj_property name="ElementShortName">RawWD01[12:0]</obj_property>
+         <obj_property name="ObjectShortName">RawWD01[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/RawWD02" type="array">
+         <obj_property name="ElementShortName">RawWD02[12:0]</obj_property>
+         <obj_property name="ObjectShortName">RawWD02[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/SumRawWD00" type="array">
+         <obj_property name="ElementShortName">SumRawWD00[47:0]</obj_property>
+         <obj_property name="ObjectShortName">SumRawWD00[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/SumRawWD01" type="array">
+         <obj_property name="ElementShortName">SumRawWD01[47:0]</obj_property>
+         <obj_property name="ObjectShortName">SumRawWD01[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/SumRawWD02" type="array">
+         <obj_property name="ElementShortName">SumRawWD02[47:0]</obj_property>
+         <obj_property name="ObjectShortName">SumRawWD02[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/pedestal00" type="array">
+         <obj_property name="ElementShortName">pedestal00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">pedestal00[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/pedestal01" type="array">
+         <obj_property name="ElementShortName">pedestal01[12:0]</obj_property>
+         <obj_property name="ObjectShortName">pedestal01[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/pedestal02" type="array">
+         <obj_property name="ElementShortName">pedestal02[12:0]</obj_property>
+         <obj_property name="ObjectShortName">pedestal02[12:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group767" type="group">
+      <obj_property name="label">Accumulate signal quantities</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/WD00" type="array">
+         <obj_property name="ElementShortName">WD00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">WD00[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/WD01" type="array">
+         <obj_property name="ElementShortName">WD01[12:0]</obj_property>
+         <obj_property name="ObjectShortName">WD01[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/WD02" type="array">
+         <obj_property name="ElementShortName">WD02[12:0]</obj_property>
+         <obj_property name="ObjectShortName">WD02[12:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group86" type="group">
+      <obj_property name="label">Get Qstrip and xstrip</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">Get Sigma Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group64" type="group">
+      <obj_property name="label">Get Sigma x*Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group97" type="group">
+      <obj_property name="label">Get x*x*Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group99" type="group">
+      <obj_property name="label">Get Sigma x*x*Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group148" type="group">
+      <obj_property name="label">Get Sigma x*x*Q/Sigma Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group84" type="group">
+      <obj_property name="label">Calculate beam position X</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group88" type="group">
+      <obj_property name="label">Get X*X</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group149" type="group">
+      <obj_property name="label">Get squared beam width</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group152" type="group">
+      <obj_property name="label">Calculate beam width sigmaX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/RING_SOD" type="logic">
+         <obj_property name="ElementShortName">RING_SOD</obj_property>
+         <obj_property name="ObjectShortName">RING_SOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/rdBusy" type="logic">
+         <obj_property name="ElementShortName">rdBusy</obj_property>
+         <obj_property name="ObjectShortName">rdBusy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/REG_LEN" type="array">
+         <obj_property name="ElementShortName">REG_LEN[15:0]</obj_property>
+         <obj_property name="ObjectShortName">REG_LEN[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/irlen" type="array">
+         <obj_property name="ElementShortName">irlen[15:0]</obj_property>
+         <obj_property name="ObjectShortName">irlen[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/irLength" type="array">
+         <obj_property name="ElementShortName">irLength[16:0]</obj_property>
+         <obj_property name="ObjectShortName">irLength[16:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/lenwindow" type="array">
+         <obj_property name="ElementShortName">lenwindow[21:0]</obj_property>
+         <obj_property name="ObjectShortName">lenwindow[21:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/len" type="array">
+         <obj_property name="ElementShortName">len[22:0]</obj_property>
+         <obj_property name="ObjectShortName">len[22:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/SYSCLK" type="logic">
+         <obj_property name="ElementShortName">SYSCLK</obj_property>
+         <obj_property name="ObjectShortName">SYSCLK</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ENABLE" type="logic">
+         <obj_property name="ElementShortName">ENABLE</obj_property>
+         <obj_property name="ObjectShortName">ENABLE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/irSod" type="array">
+         <obj_property name="ElementShortName">irSod[3:0]</obj_property>
+         <obj_property name="ObjectShortName">irSod[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/mBusy" type="logic">
+         <obj_property name="ElementShortName">mBusy</obj_property>
+         <obj_property name="ObjectShortName">mBusy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/intwe" type="logic">
+         <obj_property name="ElementShortName">intwe</obj_property>
+         <obj_property name="ObjectShortName">intwe</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/CountCalPed" type="array">
+         <obj_property name="ElementShortName">CountCalPed[16:0]</obj_property>
+         <obj_property name="ObjectShortName">CountCalPed[16:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/FinPedCal" type="logic">
+         <obj_property name="ElementShortName">FinPedCal</obj_property>
+         <obj_property name="ObjectShortName">FinPedCal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/DecidedPed" type="logic">
+         <obj_property name="ElementShortName">DecidedPed</obj_property>
+         <obj_property name="ObjectShortName">DecidedPed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/IntQNow" type="logic">
+         <obj_property name="ElementShortName">IntQNow</obj_property>
+         <obj_property name="ObjectShortName">IntQNow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/CountCal" type="array">
+         <obj_property name="ElementShortName">CountCal[16:0]</obj_property>
+         <obj_property name="ObjectShortName">CountCal[16:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/StartCal" type="logic">
+         <obj_property name="ElementShortName">StartCal</obj_property>
+         <obj_property name="ObjectShortName">StartCal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/LongQstripNow" type="logic">
+         <obj_property name="ElementShortName">LongQstripNow</obj_property>
+         <obj_property name="ObjectShortName">LongQstripNow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/SumStandby" type="logic">
+         <obj_property name="ElementShortName">SumStandby</obj_property>
+         <obj_property name="ObjectShortName">SumStandby</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/WeightSumStandby" type="logic">
+         <obj_property name="ElementShortName">WeightSumStandby</obj_property>
+         <obj_property name="ObjectShortName">WeightSumStandby</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/DelayedStandby" type="logic">
+         <obj_property name="ElementShortName">DelayedStandby</obj_property>
+         <obj_property name="ObjectShortName">DelayedStandby</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/erms" type="logic">
+         <obj_property name="ElementShortName">erms</obj_property>
+         <obj_property name="ObjectShortName">erms</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/SquareWeightStandby" type="logic">
+         <obj_property name="ElementShortName">SquareWeightStandby</obj_property>
+         <obj_property name="ObjectShortName">SquareWeightStandby</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/StartDivider2" type="logic">
+         <obj_property name="ElementShortName">StartDivider2</obj_property>
+         <obj_property name="ObjectShortName">StartDivider2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/EndDivider2" type="logic">
+         <obj_property name="ElementShortName">EndDivider2</obj_property>
+         <obj_property name="ObjectShortName">EndDivider2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/StartSQRT" type="logic">
+         <obj_property name="ElementShortName">StartSQRT</obj_property>
+         <obj_property name="ObjectShortName">StartSQRT</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/EndSQRT" type="logic">
+         <obj_property name="ElementShortName">EndSQRT</obj_property>
+         <obj_property name="ObjectShortName">EndSQRT</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/EndCal" type="logic">
+         <obj_property name="ElementShortName">EndCal</obj_property>
+         <obj_property name="ObjectShortName">EndCal</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group87" type="group">
+      <obj_property name="label">Interlock</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/CompareNow" type="logic">
+         <obj_property name="ElementShortName">CompareNow</obj_property>
+         <obj_property name="ObjectShortName">CompareNow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/StartInterlock" type="logic">
+         <obj_property name="ElementShortName">StartInterlock</obj_property>
+         <obj_property name="ObjectShortName">StartInterlock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/status_BeamPos" type="array">
+         <obj_property name="ElementShortName">status_BeamPos[15:0]</obj_property>
+         <obj_property name="ObjectShortName">status_BeamPos[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/status_BeamWid" type="array">
+         <obj_property name="ElementShortName">status_BeamWid[23:0]</obj_property>
+         <obj_property name="ObjectShortName">status_BeamWid[23:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/beamintensity" type="logic">
+         <obj_property name="ElementShortName">beamintensity</obj_property>
+         <obj_property name="ObjectShortName">beamintensity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/RegInterlock" type="logic">
+         <obj_property name="ElementShortName">RegInterlock</obj_property>
+         <obj_property name="ObjectShortName">RegInterlock</obj_property>
+      </wvobject>
+      <wvobject fp_name="group157" type="group">
+         <obj_property name="label">Get calculated results</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="group156" type="group">
+         <obj_property name="label">Compare result and threshold</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="group227" type="group">
+            <obj_property name="label">Beam position check</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/THRESHOLD" type="array">
+               <obj_property name="ElementShortName">THRESHOLD[15:0]</obj_property>
+               <obj_property name="ObjectShortName">THRESHOLD[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/PosInterlock" type="logic">
+               <obj_property name="ElementShortName">PosInterlock</obj_property>
+               <obj_property name="ObjectShortName">PosInterlock</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group228" type="group">
+            <obj_property name="label">Beam width check</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/THRESHOLD_WIDTH" type="array">
+               <obj_property name="ElementShortName">THRESHOLD_WIDTH[23:0]</obj_property>
+               <obj_property name="ObjectShortName">THRESHOLD_WIDTH[23:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/DiffBeamWid" type="array">
+               <obj_property name="ElementShortName">DiffBeamWid[23:0]</obj_property>
+               <obj_property name="ObjectShortName">DiffBeamWid[23:0]</obj_property>
+               <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/WidInterlock" type="logic">
+               <obj_property name="ElementShortName">WidInterlock</obj_property>
+               <obj_property name="ObjectShortName">WidInterlock</obj_property>
+            </wvobject>
+            <wvobject fp_name="/ADC_SiTCP_RAW_TB/sRST" type="logic">
+               <obj_property name="ElementShortName">sRST</obj_property>
+               <obj_property name="ObjectShortName">sRST</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/status_Interlock" type="logic">
+      <obj_property name="ElementShortName">status_Interlock</obj_property>
+      <obj_property name="ObjectShortName">status_Interlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/exceed" type="logic">
+      <obj_property name="ElementShortName">exceed</obj_property>
+      <obj_property name="ObjectShortName">exceed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/SYSCLK" type="logic">
+      <obj_property name="ElementShortName">SYSCLK</obj_property>
+      <obj_property name="ObjectShortName">SYSCLK</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/INT_NUM" type="array">
+      <obj_property name="ElementShortName">INT_NUM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">INT_NUM[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/IntLife" type="array">
+      <obj_property name="ElementShortName">IntLife[3:0]</obj_property>
+      <obj_property name="ObjectShortName">IntLife[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/LifeCount" type="array">
+      <obj_property name="ElementShortName">LifeCount[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LifeCount[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/issue_Interlock" type="logic">
+      <obj_property name="ElementShortName">issue_Interlock</obj_property>
+      <obj_property name="ObjectShortName">issue_Interlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="group111" type="group">
+      <obj_property name="label">Close ADC_INT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/INT_TAG" type="logic">
+         <obj_property name="ElementShortName">INT_TAG</obj_property>
+         <obj_property name="ObjectShortName">INT_TAG</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/INT_END" type="logic">
+         <obj_property name="ElementShortName">INT_END</obj_property>
+         <obj_property name="ObjectShortName">INT_END</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/BEAM_POSITION" type="array">
+         <obj_property name="ElementShortName">BEAM_POSITION[15:0]</obj_property>
+         <obj_property name="ObjectShortName">BEAM_POSITION[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/BEAM_WIDTH" type="array">
+         <obj_property name="ElementShortName">BEAM_WIDTH[23:0]</obj_property>
+         <obj_property name="ObjectShortName">BEAM_WIDTH[23:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_SiTCP_RAW_TB/uut_RAW/ADC_INT/INT_INTERLOCK" type="logic">
+         <obj_property name="ElementShortName">INT_INTERLOCK</obj_property>
+         <obj_property name="ObjectShortName">INT_INTERLOCK</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,1448 @@
+
+*** Running vivado
+    with args -log ADC_SiTCP_V20.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ADC_SiTCP_V20.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ADC_SiTCP_V20.tcl -notrace
+Command: synth_design -top ADC_SiTCP_V20 -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8696 
+WARNING: [Synth 8-2306] macro SYN_DATE redefined [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:15]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 989.148 ; gain = 242.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_V20' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:37]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter CH_NUM bound to: 24 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SYSCLK0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/SYSCLK0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SYSCLK0' (1#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/SYSCLK0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SYSCLK2' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/SYSCLK2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SYSCLK2' (2#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/SYSCLK2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49681]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49681]
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13467]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (4#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13467]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (5#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (6#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014]
+INFO: [Synth 8-6157] synthesizing module 'ADC_IF' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/new/ADC_IF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'SIF_IF2_TEST' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/new/SIF_IF2_TEST.v:58]
+	Parameter SYS_W bound to: 9 - type: integer 
+	Parameter DEV_W bound to: 54 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SIF_IF2_selectio_wiz_TEST' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/new/SIF_IF2_selectio_wiz_TEST.v:56]
+	Parameter SYS_W bound to: 9 - type: integer 
+	Parameter DEV_W bound to: 54 - type: integer 
+	Parameter num_serial_bits bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (7#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: FALSE - type: string 
+	Parameter IDELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (8#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38572]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (9#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38572]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1336]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (10#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1336]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1402]
+	Parameter BUFR_DIVIDE bound to: 3 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (11#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1402]
+INFO: [Synth 8-6155] done synthesizing module 'SIF_IF2_selectio_wiz_TEST' (12#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/new/SIF_IF2_selectio_wiz_TEST.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'SIF_IF2_TEST' (13#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/new/SIF_IF2_TEST.v:58]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (14#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_IF' (15#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/new/ADC_IF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_RING' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v:14]
+INFO: [Synth 8-6157] synthesizing module 'mem_8_4K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/mem_8_4K_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_8_4K' (16#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/mem_8_4K_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_RING' (17#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v:14]
+INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_RAW' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:16]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:197]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:228]
+INFO: [Synth 8-6157] synthesizing module 'ADC_INT' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:20]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (18#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_1' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_1' (19#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/divider_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (20#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/divider_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_2' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/mult_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_2' (21#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/mult_gen_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (22#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/.Xil/Vivado-2584-DESKTOP-NG52DIC/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RST_FD6'. This will prevent further optimization [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:1335]
+WARNING: [Synth 8-6014] Unused sequential element RegInterlock_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:1219]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_INT' (23#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v:20]
+WARNING: [Synth 8-6014] Unused sequential element irADC_PDSTL_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:111]
+WARNING: [Synth 8-6014] Unused sequential element irTrgCunt_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:133]
+WARNING: [Synth 8-6014] Unused sequential element readstart_reg was removed.  [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:308]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_RAW' (24#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:16]
+INFO: [Synth 8-6157] synthesizing module 'LEDSet' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/firmware/LEDSet.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LEDSet' (25#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/firmware/LEDSet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCTRL' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1136]
+	Parameter CE_TYPE_CE0 bound to: SYNC - type: string 
+	Parameter CE_TYPE_CE1 bound to: SYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE0_INVERTED bound to: 1'b0 
+	Parameter IS_CE1_INVERTED bound to: 1'b0 
+	Parameter IS_I0_INVERTED bound to: 1'b0 
+	Parameter IS_I1_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE0_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE1_INVERTED bound to: 1'b0 
+	Parameter IS_S0_INVERTED bound to: 1'b0 
+	Parameter IS_S1_INVERTED bound to: 1'b0 
+	Parameter PRESELECT_I0 bound to: FALSE - type: string 
+	Parameter PRESELECT_I1 bound to: FALSE - type: string 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCTRL' (26#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1136]
+INFO: [Synth 8-6157] synthesizing module 'WRAP_SiTCP_GMII_XC7A_32K' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/WRAP_SiTCP_GMII_XC7A_32K.V:21]
+	Parameter TIM_PERIOD bound to: 8'b10100000 
+INFO: [Synth 8-6157] synthesizing module 'TIMER' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/TIMER.v:13]
+	Parameter TIM_PERIOD bound to: 8'b10011110 
+INFO: [Synth 8-6155] done synthesizing module 'TIMER' (27#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/TIMER.v:13]
+INFO: [Synth 8-6157] synthesizing module 'SiTCP_XC7A_32K_BBT_V80' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.V:18]
+INFO: [Synth 8-6155] done synthesizing module 'SiTCP_XC7A_32K_BBT_V80' (28#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.V:18]
+INFO: [Synth 8-6155] done synthesizing module 'WRAP_SiTCP_GMII_XC7A_32K' (29#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/WRAP_SiTCP_GMII_XC7A_32K.V:21]
+INFO: [Synth 8-6157] synthesizing module 'LOC_REG' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:28]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:658]
+INFO: [Synth 8-6157] synthesizing module 'AD_ADC_SPI' [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/AD_ADC_SPI.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'AD_ADC_SPI' (30#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/AD_ADC_SPI.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LOC_REG' (31#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:28]
+WARNING: [Synth 8-3848] Net SiTCP_MDIO in module/entity ADC_SiTCP_V20 does not have driver. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_V20' (32#1) [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v:37]
+WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[1] driven by constant 0
+WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[0] driven by constant 0
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[31]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[30]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[29]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[28]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[27]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[26]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[25]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[24]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[23]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[22]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[21]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[20]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[19]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[18]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[17]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[16]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[15]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[14]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[13]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[12]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[11]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[10]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[9]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[8]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[7]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[6]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[5]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[4]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[3]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[2]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[1]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_ADC_PDSTL[0]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port TIM_1MS
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_STATUS0[7]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_STATUS0[6]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_STATUS0[5]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_STATUS0[4]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_STATUS0[3]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_STATUS0[2]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_STATUS0[1]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_STATUS0[0]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_TRG_STATUS[15]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_TRG_STATUS[14]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_TRG_STATUS[13]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_TRG_STATUS[12]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_TRG_STATUS[11]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_TRG_STATUS[10]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_TRG_STATUS[9]
+WARNING: [Synth 8-3331] design LOC_REG has unconnected port REG_TRG_STATUS[8]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[15]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[14]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[13]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[12]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[11]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[10]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[9]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[8]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[7]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[6]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[5]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[4]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[3]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[2]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[1]
+WARNING: [Synth 8-3331] design ADC_INT has unconnected port DATA_LENGTH[0]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[191]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[190]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[189]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[188]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[187]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[186]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[185]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[184]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[183]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[182]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[181]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[180]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[179]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[178]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[177]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[176]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[175]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[174]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[173]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[172]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[171]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[170]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[169]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[168]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[167]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[166]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[165]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[164]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[163]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[162]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[161]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[160]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[159]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[158]
+WARNING: [Synth 8-3331] design ADC_SiTCP_RAW has unconnected port REG_ADC_PDSTL[157]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1079.262 ; gain = 332.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.262 ; gain = 332.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.262 ; gain = 332.355
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1079.262 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'BUFGCTRL_CLK0' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/SYSCLK0/SYSCLK0/SYSCLK0_in_context.xdc] for cell 'SYSCLK0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/SYSCLK0/SYSCLK0/SYSCLK0_in_context.xdc] for cell 'SYSCLK0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/SYSCLK2/SYSCLK2/SYSCLK2_in_context.xdc] for cell 'SYSCLK2'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/SYSCLK2/SYSCLK2/SYSCLK2_in_context.xdc] for cell 'SYSCLK2'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_1_in_context.xdc] for cell 'ADC1_IF/eras_fifo'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_1_in_context.xdc] for cell 'ADC1_IF/eras_fifo'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_1_in_context.xdc] for cell 'ADC2_IF/eras_fifo'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_1_in_context.xdc] for cell 'ADC2_IF/eras_fifo'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_1_in_context.xdc] for cell 'ADC3_IF/eras_fifo'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_1_in_context.xdc] for cell 'ADC3_IF/eras_fifo'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[0].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[0].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[1].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[1].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[2].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[2].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[3].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[3].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[4].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[4].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[5].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[5].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[6].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[6].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[7].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[7].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[8].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[8].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[9].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[9].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[10].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[10].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[11].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[11].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[12].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[12].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[13].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[13].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[14].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[14].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[15].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[15].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[16].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[16].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[17].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[17].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[18].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[18].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[19].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[19].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[20].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[20].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[21].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[21].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[22].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[22].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[23].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[23].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[24].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[24].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[25].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[25].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[26].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[26].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[27].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[27].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[28].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[28].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[29].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[29].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[30].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[30].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[31].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[31].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[32].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[32].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[33].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[33].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[34].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[34].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[35].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RING/mem_8_4K_generate[35].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[1].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[1].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[2].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[2].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[3].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[3].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[4].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[4].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[5].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[5].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[6].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[6].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[7].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[7].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[8].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[8].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[9].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[9].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[10].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[10].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[11].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[11].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[12].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[12].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[13].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[13].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[14].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[14].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[15].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[15].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[16].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[16].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[17].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[17].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[18].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[18].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[19].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[19].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[20].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[20].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[21].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[21].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[22].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[22].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[23].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[23].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[24].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[24].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[25].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[25].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[26].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[26].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[27].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[27].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[28].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[28].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[29].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[29].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[30].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[30].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[31].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[31].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[32].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[32].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[33].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[33].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[34].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[34].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[35].ADC_MEM_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mem_8_4K/mem_8_4K/mem_8_4K_in_context.xdc] for cell 'ADC_SiTCP_RAW/mem_generate[35].ADC_MEM_0'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalPartBeamWidth'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalPartBeamWidth'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mult_gen_2/mult_gen_2/mult_gen_2_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mult_gen_2/mult_gen_2/mult_gen_2_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+Finished Parsing XDC File [c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+Parsing XDC File [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+WARNING: [Vivado 12-507] No nets matched 'SiTCP/SiTCP/SiTCP_INT/SiTCP_INT_REG/reg*'. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:695]
+WARNING: [Vivado 12-507] No nets matched 'SiTCP/SiTCP/BBT_SiTCP_RST/resetReq*'. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:696]
+WARNING: [Vivado 12-507] No nets matched 'SiTCP/SiTCP/GMII/GMII_TXBUF/memRdReq*'. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:697]
+WARNING: [Vivado 12-507] No nets matched 'SiTCP/SiTCP/GMII/GMII_TXBUF/orRdAct*'. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:698]
+WARNING: [Vivado 12-507] No nets matched 'SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr*'. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:699]
+WARNING: [Vivado 12-507] No nets matched 'SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr*'. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:700]
+WARNING: [Vivado 12-507] No nets matched 'SiTCP/SiTCP/GMII/GMII_TXBUF/muxEndTgl'. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:701]
+WARNING: [Vivado 12-507] No nets matched 'SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr*'. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:702]
+Finished Parsing XDC File [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ADC_SiTCP_V20_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ADC_SiTCP_V20_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ADC_SiTCP_V20_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1217.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  FD => FDRE: 12 instances
+  OBUFDS => OBUFDS: 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1217.664 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC1_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC2_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC3_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[10].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[11].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[12].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[13].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[14].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[15].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[16].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[17].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[18].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[19].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[1].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[20].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[21].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[22].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[23].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[24].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[25].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[26].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[27].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[28].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[29].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[2].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[30].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[31].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[32].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[33].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[34].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[35].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[3].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[4].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[5].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[6].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[7].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[8].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/mem_generate[9].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition' at clock pin 'aclk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth' at clock pin 'aclk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/ADC_INT/CalPartBeamWidth' at clock pin 'aclk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition' at clock pin 'CLK' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/ADC_INT/multiplier_0' at clock pin 'CLK' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RAW/ADC_INT/multiplier_1' at clock pin 'CLK' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[0].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[10].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[11].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[12].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[13].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[14].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[15].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[16].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[17].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[18].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[19].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[1].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[20].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[21].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[22].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[23].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[24].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[25].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[26].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[27].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[28].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[29].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[2].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[30].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[31].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[32].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[33].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[34].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[35].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[3].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[4].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[5].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[6].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[7].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[8].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_SiTCP_RING/mem_8_4K_generate[9].ADC_MEM_0' at clock pin 'clka' is different from the actual clock period '6.250', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1217.664 ; gain = 470.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1217.664 ; gain = 470.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK75mn. (constraint file  c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/SYSCLK0/SYSCLK0/SYSCLK0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK75mn. (constraint file  c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/SYSCLK0/SYSCLK0/SYSCLK0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK75mp. (constraint file  c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/SYSCLK0/SYSCLK0/SYSCLK0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK75mp. (constraint file  c:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/ip/SYSCLK0/SYSCLK0/SYSCLK0_in_context.xdc, line 8).
+Applied set_property DONT_TOUCH = true for SYSCLK0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for SYSCLK2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC1_IF/eras_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC2_IF/eras_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC3_IF/eras_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[0].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[10].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[11].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[12].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[13].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[14].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[15].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[16].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[17].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[18].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[19].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[1].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[20].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[21].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[22].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[23].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[24].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[25].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[26].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[27].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[28].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[29].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[2].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[30].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[31].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[32].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[33].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[34].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[35].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[3].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[4].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[5].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[6].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[7].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[8].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RING/\mem_8_4K_generate[9].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[0].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[10].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[11].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[12].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[13].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[14].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[15].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[16].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[17].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[18].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[19].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[1].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[20].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[21].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[22].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[23].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[24].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[25].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[26].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[27].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[28].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[29].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[2].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[30].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[31].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[32].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[33].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[34].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[35].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[3].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[4].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[5].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[6].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[7].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[8].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/\mem_generate[9].ADC_MEM_0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/multiplier_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/CalBeamPosition. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/CalPartBeamWidth. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/CalBeamWidth. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_SiTCP_RAW/ADC_INT/multiplier_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1217.664 ; gain = 470.758
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'irDelay_reg' and it is trimmed from '16' to '12' bits. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'irMode_reg' and it is trimmed from '2' to '1' bits. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:119]
+WARNING: [Synth 8-3936] Found unconnected internal register 'irAddr_reg' and it is trimmed from '11' to '8' bits. [C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v:218]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1217.664 ; gain = 470.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     80 Bit       Adders := 1     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input     48 Bit       Adders := 49    
+	   3 Input     48 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 2     
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 25    
+	   3 Input     13 Bit       Adders := 24    
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 5     
++---Registers : 
+	              384 Bit    Registers := 1     
+	              288 Bit    Registers := 1     
+	               80 Bit    Registers := 1     
+	               64 Bit    Registers := 8     
+	               48 Bit    Registers := 50    
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               27 Bit    Registers := 2     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 20    
+	               13 Bit    Registers := 75    
+	               12 Bit    Registers := 77    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 128   
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 22    
+	                1 Bit    Registers := 97    
++---Muxes : 
+	   2 Input    288 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   3 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 4     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 2     
+	   4 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 6     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 8     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 120   
+	  14 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   3 Input      1 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ADC_SiTCP_V20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 4     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module ADC_IF__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 17    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ADC_IF__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 17    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ADC_IF 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 17    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ADC_SiTCP_RING 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 26    
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ADC_INT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     80 Bit       Adders := 1     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input     48 Bit       Adders := 49    
+	   3 Input     48 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 24    
+	   3 Input     13 Bit       Adders := 24    
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               80 Bit    Registers := 1     
+	               64 Bit    Registers := 8     
+	               48 Bit    Registers := 50    
+	               24 Bit    Registers := 3     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 13    
+	               13 Bit    Registers := 72    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   3 Input     48 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 6     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 1     
+Module ADC_SiTCP_RAW 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	              384 Bit    Registers := 1     
+	              288 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input    288 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 2     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module LEDSet 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module TIMER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module WRAP_SiTCP_GMII_XC7A_32K 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module AD_ADC_SPI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 2     
+	   4 Input     25 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module LOC_REG 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 118   
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 115   
+	  14 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[1] driven by constant 0
+WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (LOC_REG/\AD_ADC_SPI/irAddr_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (LOC_REG/\AD_ADC_SPI/irAddr_reg[9] )
+INFO: [Synth 8-3886] merging instance 'LOC_REG/AD_ADC_SPI/addr_reg[8]' (FDE) to 'LOC_REG/AD_ADC_SPI/addr_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (LOC_REG/\AD_ADC_SPI/irAddr_reg[10] )
+INFO: [Synth 8-3886] merging instance 'LOC_REG/AD_ADC_SPI/addr_reg[9]' (FDE) to 'LOC_REG/AD_ADC_SPI/addr_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (LOC_REG/\AD_ADC_SPI/irAddr_reg[11] )
+INFO: [Synth 8-3886] merging instance 'LOC_REG/AD_ADC_SPI/addr_reg[10]' (FDE) to 'LOC_REG/AD_ADC_SPI/addr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD14_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD13_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD12_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD11_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD10_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD09_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD08_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD07_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD06_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD05_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD04_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD03_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD02_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD01_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD00_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD23_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD22_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD22_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD21_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD21_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD20_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD20_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD19_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD19_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD18_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD18_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD17_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD17_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD16_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RAW/ADC_INT/RawWD16_reg[12]' (FDRE) to 'ADC_SiTCP_RAW/ADC_INT/RawWD15_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ADC_SiTCP_RAW/ADC_INT/\RawWD15_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (LOC_REG/\AD_ADC_SPI/irAddr_reg[12] )
+INFO: [Synth 8-3886] merging instance 'LOC_REG/AD_ADC_SPI/addr_reg[11]' (FDE) to 'LOC_REG/AD_ADC_SPI/addr_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ADC_SiTCP_RING/slrTrg_reg[1]' (FDRE) to 'ADC_SiTCP_RING/orSod_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (LOC_REG/\AD_ADC_SPI/addr_reg[12] )
+WARNING: [Synth 8-3332] Sequential element (RST_FD2) is unused and will be removed from module ADC_SiTCP_V20.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (LOC_REG/\REG_LEN_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (ADC_SiTCP_RAW/\irlen_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ADC_SiTCP_RAW/\irLength_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1217.664 ; gain = 470.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1217.664 ; gain = 470.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1217.664 ; gain = 470.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1227.066 ; gain = 480.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1231.820 ; gain = 484.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1231.820 ; gain = 484.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.820 ; gain = 484.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.820 ; gain = 484.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.820 ; gain = 484.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.820 ; gain = 484.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|ADC_INT       | SumQstrip_4th_reg[63]      | 4      | 64    | YES          | NO                 | YES               | 64     | 0       | 
+|ADC_INT       | xstripcopy_4th_reg[15]     | 5      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|ADC_SiTCP_RAW | rdAdcVal_reg               | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ADC_SiTCP_RAW | rdHdVal_reg                | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ADC_SiTCP_V20 | ADC1_IF/shift_empty_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ADC_SiTCP_V20 | ADC2_IF/shift_empty_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ADC_SiTCP_V20 | ADC3_IF/shift_empty_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|ADC_SiTCP_V20 | LEDSet/mdioData_reg[27]    | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|ADC_SiTCP_V20 | LEDSet/mdioData_reg[10]    | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++--------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------+----------+
+|      |BlackBox name          |Instances |
++------+-----------------------+----------+
+|1     |mult_gen_0             |         1|
+|2     |mult_gen_1             |         1|
+|3     |divider                |         2|
+|4     |mult_gen_2             |         1|
+|5     |cordic_0               |         1|
+|6     |mem_8_4K               |        72|
+|7     |SYSCLK0                |         1|
+|8     |SYSCLK2                |         1|
+|9     |fifo_generator_1       |         3|
+|10    |SiTCP_XC7A_32K_BBT_V80 |         1|
++------+-----------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |SYSCLK0                |     1|
+|2     |SYSCLK2                |     1|
+|3     |SiTCP_XC7A_32K_BBT_V80 |     1|
+|4     |cordic_0               |     1|
+|5     |divider                |     1|
+|6     |divider__2             |     1|
+|7     |fifo_generator_1       |     1|
+|8     |fifo_generator_1__3    |     1|
+|9     |fifo_generator_1__4    |     1|
+|10    |mem_8_4K               |     1|
+|11    |mem_8_4K__100          |     1|
+|12    |mem_8_4K__101          |     1|
+|13    |mem_8_4K__102          |     1|
+|14    |mem_8_4K__103          |     1|
+|15    |mem_8_4K__104          |     1|
+|16    |mem_8_4K__105          |     1|
+|17    |mem_8_4K__106          |     1|
+|18    |mem_8_4K__107          |     1|
+|19    |mem_8_4K__108          |     1|
+|20    |mem_8_4K__109          |     1|
+|21    |mem_8_4K__110          |     1|
+|22    |mem_8_4K__111          |     1|
+|23    |mem_8_4K__112          |     1|
+|24    |mem_8_4K__113          |     1|
+|25    |mem_8_4K__114          |     1|
+|26    |mem_8_4K__115          |     1|
+|27    |mem_8_4K__116          |     1|
+|28    |mem_8_4K__117          |     1|
+|29    |mem_8_4K__118          |     1|
+|30    |mem_8_4K__119          |     1|
+|31    |mem_8_4K__120          |     1|
+|32    |mem_8_4K__121          |     1|
+|33    |mem_8_4K__122          |     1|
+|34    |mem_8_4K__123          |     1|
+|35    |mem_8_4K__124          |     1|
+|36    |mem_8_4K__125          |     1|
+|37    |mem_8_4K__126          |     1|
+|38    |mem_8_4K__127          |     1|
+|39    |mem_8_4K__128          |     1|
+|40    |mem_8_4K__129          |     1|
+|41    |mem_8_4K__130          |     1|
+|42    |mem_8_4K__131          |     1|
+|43    |mem_8_4K__132          |     1|
+|44    |mem_8_4K__133          |     1|
+|45    |mem_8_4K__134          |     1|
+|46    |mem_8_4K__135          |     1|
+|47    |mem_8_4K__136          |     1|
+|48    |mem_8_4K__137          |     1|
+|49    |mem_8_4K__138          |     1|
+|50    |mem_8_4K__139          |     1|
+|51    |mem_8_4K__140          |     1|
+|52    |mem_8_4K__141          |     1|
+|53    |mem_8_4K__142          |     1|
+|54    |mem_8_4K__72           |     1|
+|55    |mem_8_4K__73           |     1|
+|56    |mem_8_4K__74           |     1|
+|57    |mem_8_4K__75           |     1|
+|58    |mem_8_4K__76           |     1|
+|59    |mem_8_4K__77           |     1|
+|60    |mem_8_4K__78           |     1|
+|61    |mem_8_4K__79           |     1|
+|62    |mem_8_4K__80           |     1|
+|63    |mem_8_4K__81           |     1|
+|64    |mem_8_4K__82           |     1|
+|65    |mem_8_4K__83           |     1|
+|66    |mem_8_4K__84           |     1|
+|67    |mem_8_4K__85           |     1|
+|68    |mem_8_4K__86           |     1|
+|69    |mem_8_4K__87           |     1|
+|70    |mem_8_4K__88           |     1|
+|71    |mem_8_4K__89           |     1|
+|72    |mem_8_4K__90           |     1|
+|73    |mem_8_4K__91           |     1|
+|74    |mem_8_4K__92           |     1|
+|75    |mem_8_4K__93           |     1|
+|76    |mem_8_4K__94           |     1|
+|77    |mem_8_4K__95           |     1|
+|78    |mem_8_4K__96           |     1|
+|79    |mem_8_4K__97           |     1|
+|80    |mem_8_4K__98           |     1|
+|81    |mem_8_4K__99           |     1|
+|82    |mult_gen_0             |     1|
+|83    |mult_gen_1             |     1|
+|84    |mult_gen_2             |     1|
+|85    |BUFGCTRL               |     1|
+|86    |BUFIO                  |     3|
+|87    |BUFR                   |     3|
+|88    |CARRY4                 |   766|
+|89    |IDELAYCTRL             |     1|
+|90    |IDELAYE2               |    27|
+|91    |ISERDESE2              |    27|
+|92    |LUT1                   |   333|
+|93    |LUT2                   |  2408|
+|94    |LUT3                   |   146|
+|95    |LUT4                   |   213|
+|96    |LUT5                   |   211|
+|97    |LUT6                   |  1104|
+|98    |MUXF7                  |   266|
+|99    |MUXF8                  |   107|
+|100   |ODDR                   |     4|
+|101   |SRL16E                 |    87|
+|102   |FD                     |    11|
+|103   |FDCE                   |   896|
+|104   |FDPE                   |    13|
+|105   |FDRE                   |  5568|
+|106   |FDSE                   |    40|
+|107   |IBUF                   |    24|
+|108   |IBUFDS                 |    30|
+|109   |IOBUF                  |     3|
+|110   |OBUF                   |    74|
+|111   |OBUFDS                 |     4|
+|112   |OBUFT                  |     4|
++------+-----------------------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------------------+------+
+|      |Instance         |Module                      |Cells |
++------+-----------------+----------------------------+------+
+|1     |top              |                            | 14018|
+|2     |  ADC_SiTCP_RAW  |ADC_SiTCP_RAW               |  9677|
+|3     |    ADC_INT      |ADC_INT                     |  8032|
+|4     |  LOC_REG        |LOC_REG                     |  1680|
+|5     |    AD_ADC_SPI   |AD_ADC_SPI                  |   147|
+|6     |  ADC1_IF        |ADC_IF__xdcDup__1           |   363|
+|7     |    adc          |SIF_IF2_TEST_2              |    32|
+|8     |      inst       |SIF_IF2_selectio_wiz_TEST_3 |    32|
+|9     |  ADC2_IF        |ADC_IF__xdcDup__2           |   387|
+|10    |    adc          |SIF_IF2_TEST_0              |    32|
+|11    |      inst       |SIF_IF2_selectio_wiz_TEST_1 |    32|
+|12    |  ADC3_IF        |ADC_IF                      |   459|
+|13    |    adc          |SIF_IF2_TEST                |    32|
+|14    |      inst       |SIF_IF2_selectio_wiz_TEST   |    32|
+|15    |  ADC_SiTCP_RING |ADC_SiTCP_RING              |   636|
+|16    |  LEDSet         |LEDSet                      |    78|
+|17    |  SiTCP          |WRAP_SiTCP_GMII_XC7A_32K    |   392|
+|18    |    TIMER        |TIMER                       |    90|
++------+-----------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.820 ; gain = 484.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 302 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1231.820 ; gain = 346.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1231.820 ; gain = 484.914
+INFO: [Project 1-571] Translating synthesized netlist
+Release 14.7 - ngc2edif P_INT.20190617 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design SiTCP_XC7A_32K_BBT_V80.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   SiTCP_XC7A_32K_BBT_V80.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus SiTCP/TCP/TCP_PRE/rcvdCode[4 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/UDP/UDP_PRE/udpProcStartDly[8 : 1]
+   on block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus GMII/GMII_RXCNT/muxFlowMac[7 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus GMII/GMII_TXBUF/prmblData[3 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/TCP/TCP_PRE/tcpProcStartDly[15 :
+   0] on block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   SiTCP/TCP/TCP_MNGR/preDataDlyA[7]_GND_21_o_mux_19_OUT[7 : 0] on block
+   SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/TCP/TCP_MNGR/preCmpValDly[2 : 0]
+   on block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/TCP/TCP_MNGR/irPreCode[4 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/TCP/TCP_TXCNT/payStart[3 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/TCP/TCP_TXCNT/txStart[3 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/TCP/TCP_TXCNT/memRdPrmLd[4 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/ECIF_RX/irTxEcifAck[2 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/UDP/UDP_LOC/preSoHd[2 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP/ECIF_TX/ipHdTim[9 : 0] on block
+   SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   SiTCP_INT/SiTCP_INT_REG/irAddr[3]_X3FData[7]_wide_mux_250_OUT[31 : 0] on
+   block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SiTCP_INT/SiTCP_INT_REG/muxData[31 : 0]
+   on block SiTCP_XC7A_32K_BBT_V80 is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file SiTCP_XC7A_32K_BBT_V80.edif ...
+ngc2edif: Total memory usage is 4342848 kilobytes
+
+Reading core file 'C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/SiTCP_XC7A_32K_BBT_V80.ngc' for (cell view 'SiTCP_XC7A_32K_BBT_V80', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SiTCP_XC7A_32K_BBT_V80_ngc_707405c8.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SiTCP_XC7A_32K_BBT_V80_ngc_707405c8.edif]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 1249.480 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'BUFGCTRL_CLK0' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 6555 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20190617
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 29 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1264.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3578 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 272 instances
+  FD => FDRE: 1512 instances
+  FDC => FDCE: 223 instances
+  FDE => FDRE: 1048 instances
+  FDP => FDPE: 6 instances
+  FDR => FDRE: 291 instances
+  FDS => FDSE: 21 instances
+  INV => LUT1: 190 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
+  RAM32X1S => RAM32X1S (RAMS32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+123 Infos, 206 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1264.734 ; gain = 806.918
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1264.734 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/ADC_SiTCP_V20.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ADC_SiTCP_V20_utilization_synth.rpt -pb ADC_SiTCP_V20_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 25 06:29:20 2023...

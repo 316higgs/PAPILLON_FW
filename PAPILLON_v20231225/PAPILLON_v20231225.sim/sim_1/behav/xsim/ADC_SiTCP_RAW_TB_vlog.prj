@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../PAPILLON_v20231224.srcs/sources_1/ip/SYSCLK0" --include "../../../../PAPILLON_v20231224.srcs/sources_1/ip/SYSCLK2" \
+"../../../../PAPILLON_v20231224.srcs/sources_1/ip/mem_8_4K/sim/mem_8_4K.v" \
+"../../../../PAPILLON_v20231224.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v" \
+"../../../../PAPILLON_v20231224.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v" \
+"../../../../PAPILLON_v20231224.srcs/sim_1/imports/new/ADC_SiTCP_RAW_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

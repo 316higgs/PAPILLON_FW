@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 25 06:17:41 2023
+# Process ID: 8532
+# Current directory: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent292 C:\Users\81802\Desktop\PAPILLON_FW\PAPILLON_v20231225\PAPILLON_v20231225.xpr
+# Log file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/vivado.log
+# Journal file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1

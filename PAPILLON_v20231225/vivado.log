@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 25 06:17:41 2023
+# Process ID: 8532
+# Current directory: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent292 C:\Users\81802\Desktop\PAPILLON_FW\PAPILLON_v20231225\PAPILLON_v20231225.xpr
+# Log file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/vivado.log
+# Journal file: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 968.898 ; gain = 254.750
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Mon Dec 25 06:26:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Mon Dec 25 06:28:24 2023] Launched synth_1...
+Run output will be captured here: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Mon Dec 25 06:29:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon Dec 25 06:37:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/81802/Desktop/PAPILLON_FW/PAPILLON_v20231225/PAPILLON_v20231225.runs/impl_1/runme.log
